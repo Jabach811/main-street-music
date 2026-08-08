@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- @stamp head-top -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* .js gates the entrance animations. If site.js never runs, drop the gate
+   so the page renders plainly rather than staying hidden. */
+document.documentElement.className += " js";
+setTimeout(function () {
+  if (!window.msmReady) {
+    document.documentElement.className =
+      document.documentElement.className.replace(/\bjs\b/, "");
+  }
+}, 3000);
+</script>
+<!-- @end head-top -->
+
+<title>Visit Us — Main Street Music, 45 W 10th St, Tracy CA</title>
+<meta name="description" content="Main Street Music is at 45 West 10th Street in downtown Tracy. Open Monday to Thursday 11am–8pm, Friday 11am–6pm, Saturday 10am–4pm. Call (209) 835-1125.">
+<link rel="canonical" href="https://www.tracyrocks.com/visit.html">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.tracyrocks.com/visit.html">
+<meta property="og:title" content="Visit Us — Main Street Music, Tracy CA">
+<meta property="og:description" content="45 West 10th Street, downtown Tracy. Lessons, gear, rentals and repairs under one roof.">
+<meta property="og:image" content="https://www.tracyrocks.com/img/guitar-wall-1000.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- @stamp head-assets -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600..700&family=Geist:wght@400..600&display=swap">
+<link rel="stylesheet" href="css/site.css">
+<!-- @end head-assets -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MusicStore",
+  "@id": "https://www.tracyrocks.com/#store",
+  "name": "Main Street Music",
+  "url": "https://www.tracyrocks.com/",
+  "telephone": "+1-209-835-1125",
+  "email": "mainstreetmusictracy@gmail.com",
+  "foundingDate": "1993-06",
+  "priceRange": "$$",
+  "image": "https://www.tracyrocks.com/img/guitar-wall-1000.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "45 West 10th Street",
+    "addressLocality": "Tracy",
+    "addressRegion": "CA",
+    "postalCode": "95376",
+    "addressCountry": "US"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "11:00", "closes": "20:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "11:00", "closes": "18:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "16:00" }
+  ]
+}
+</script>
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div data-header-sentinel aria-hidden="true"></div>
+
+<!-- @stamp header -->
+<header class="site-header">
+  <div class="wrap site-header__bar">
+
+    <a class="site-header__logo" href="index.html" aria-label="Main Street Music — home">
+      <picture>
+        <source srcset="img/logo.webp" type="image/webp">
+        <img src="img/logo-src.png" width="411" height="200"
+             alt="Main Street Music, 45 West 10th Street, Tracy, CA. Where students come first.">
+      </picture>
+    </a>
+
+    <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">
+      <span class="nav-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+      Menu
+    </button>
+
+    <nav class="nav" id="primary-nav" aria-label="Primary">
+      <a href="lessons.html">Lessons</a>
+      <a href="teachers.html">Teachers</a>
+      <a href="rentals.html">Rentals</a>
+      <a href="repairs.html">Repairs</a>
+      <a href="gear.html">Gear</a>
+      <a href="visit.html" aria-current="page">Visit</a>
+    </nav>
+
+    <div class="site-header__contact">
+      <a class="site-header__call" href="tel:+12098351125">(209) 835-1125</a>
+      <span class="status" data-status="compact" hidden></span>
+    </div>
+
+  </div>
+</header>
+<!-- @end header -->
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">Visit</span>
+      <h1>45 West 10th Street, downtown Tracy.</h1>
+      <p class="lede">Lessons, gear, rentals and the repair bench are all in the same building. Walking in is still the fastest way to get an answer out of us.</p>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="https://www.google.com/maps/search/?api=1&amp;query=45+West+10th+Street+Tracy+CA+95376" target="_blank" rel="noopener">Get directions</a>
+        <a class="btn btn--ghost" href="tel:+12098351125">Call (209)&nbsp;835-1125</a>
+        <a class="btn btn--ghost" href="mailto:mainstreetmusictracy@gmail.com?subject=Question%20for%20the%20store">Email us</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap feature reveal-stagger">
+
+      <div class="flow">
+        <span class="eyebrow">Hours</span>
+        <h2>When we are open.</h2>
+        <span class="status" data-status hidden></span>
+        <dl class="hours">
+          <div class="hours__row" data-day="1,2,3,4"><dt>Monday&ndash;Thursday</dt><dd>11am &ndash; 8pm</dd></div>
+          <div class="hours__row" data-day="5"><dt>Friday</dt><dd>11am &ndash; 6pm</dd></div>
+          <div class="hours__row" data-day="6"><dt>Saturday</dt><dd>10am &ndash; 4pm</dd></div>
+          <div class="hours__row" data-day="0"><dt>Sunday</dt><dd>Closed</dd></div>
+        </dl>
+        <p class="note">We close for the usual holidays. If you are making a special trip, a quick phone call saves a wasted drive.</p>
+      </div>
+
+      <div>
+        <h2 class="h-sub">How to reach us</h2>
+        <dl class="spec">
+          <div><dt>Address</dt><dd>45 West 10th Street<br>Tracy, CA 95376</dd></div>
+          <div><dt>Phone</dt><dd><a href="tel:+12098351125">(209) 835-1125</a></dd></div>
+          <div><dt>Email</dt><dd><a href="mailto:mainstreetmusictracy@gmail.com">mainstreetmusictracy@gmail.com</a></dd></div>
+          <div><dt>Online store</dt><dd><a href="https://reverb.com/shop/mainstreetmusictracy" target="_blank" rel="noopener">Reverb</a></dd></div>
+        </dl>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section section--sunk">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Inside</span>
+          <h2>What is actually in the building.</h2>
+        </div>
+      </div>
+
+      <ul class="checklist checklist--cols reveal">
+        <li><strong>The showroom.</strong> Guitars, amps, keyboards, drums, brass and woodwinds, out where you can play them.</li>
+        <li><strong>Lesson rooms.</strong> Private rooms where the weekly lessons happen, in the back.</li>
+        <li><strong>The repair bench.</strong> Setups, restrings and electronics work, done on site by our own tech.</li>
+        <li><strong>The counter.</strong> Strings, reeds, cables and everything else you ran out of on a Tuesday night.</li>
+      </ul>
+
+      <!-- TODO (phase 5): parking specifics and a photo of the storefront so
+           first-time visitors know what they are looking for. -->
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">First time</span>
+          <h2>What to bring, depending on why you are coming.</h2>
+          <p class="measure-short">None of this needs an appointment. Walk in during opening hours and somebody at the counter will sort you out.</p>
+        </div>
+      </div>
+
+      <ol class="steps reveal">
+        <li>
+          <div>
+            <h3>Signing a student up for lessons</h3>
+            <p>Bring the instrument if you already own one, and know roughly which afternoons or evenings are free. We check the schedule at the counter and put you in the first open slot that fits. <a href="lessons.html">How lessons work</a>.</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Renting a band instrument</h3>
+            <p>Bring the school&rsquo;s instrument list if the teacher sent one home, plus a photo ID and a card. Rent-to-own means the payments count toward owning it. <a href="rentals.html">What we rent</a>.</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Dropping off a repair</h3>
+            <p>Bring the instrument and its case. Tell us what it is doing wrong, or hand it to the tech and let him find it. We quote before any work starts. <a href="repairs.html">Repair services</a>.</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Just trying things out</h3>
+            <p>Bring nothing. Pick up whatever is on the wall, plug it in and play it for ten minutes. Nobody is going to hover. <a href="gear.html">What we carry</a>.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+</main>
+
+<!-- @stamp footer-links -->
+<footer class="site-footer">
+  <div class="wrap">
+
+    <div class="site-footer__grid site-footer__grid--top">
+      <div>
+        <h3>Lessons</h3>
+        <ul>
+          <li><a href="lessons.html">How lessons work</a></li>
+          <li><a href="teachers.html">Our teachers</a></li>
+          <li><a href="recitals.html">Recitals</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>The store</h3>
+        <ul>
+          <li><a href="gear.html">Gear we carry</a></li>
+          <li><a href="rentals.html">Rentals &amp; rent-to-own</a></li>
+          <li><a href="repairs.html">Repairs</a></li>
+          <li><a href="visit.html" aria-current="page">Visit the shop</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Say hello</h3>
+        <ul>
+          <li><a href="mailto:mainstreetmusictracy@gmail.com">mainstreetmusictracy@gmail.com</a></li>
+          <li><a href="https://reverb.com/shop/mainstreetmusictracy" target="_blank" rel="noopener">Shop on Reverb</a></li>
+          <li><a href="https://www.facebook.com/mainstreetmusictracy/" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://www.instagram.com/mainstreetmusictracy/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.youtube.com/@MainStreetMusicTracy/videos" target="_blank" rel="noopener">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="site-footer__base">&copy; <span data-year>2026</span> Main Street Music, Inc.</p>
+
+  </div>
+</footer>
+<!-- @end footer-links -->
+
+<!-- @stamp callbar -->
+<div class="callbar">
+  <a class="btn btn--primary" href="tel:+12098351125">Call the store</a>
+  <a class="btn btn--light" href="mailto:mainstreetmusictracy@gmail.com?subject=Question%20for%20the%20store">Email us</a>
+</div>
+<!-- @end callbar -->
+
+<script src="js/site.js" defer></script>
+</body>
+</html>

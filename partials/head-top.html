@@ -1,0 +1,13 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* .js gates the entrance animations. If site.js never runs, drop the gate
+   so the page renders plainly rather than staying hidden. */
+document.documentElement.className += " js";
+setTimeout(function () {
+  if (!window.msmReady) {
+    document.documentElement.className =
+      document.documentElement.className.replace(/\bjs\b/, "");
+  }
+}, 3000);
+</script>

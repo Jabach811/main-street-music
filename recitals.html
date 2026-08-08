@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- @stamp head-top -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* .js gates the entrance animations. If site.js never runs, drop the gate
+   so the page renders plainly rather than staying hidden. */
+document.documentElement.className += " js";
+setTimeout(function () {
+  if (!window.msmReady) {
+    document.documentElement.className =
+      document.documentElement.className.replace(/\bjs\b/, "");
+  }
+}, 3000);
+</script>
+<!-- @end head-top -->
+
+<title>Student Recitals — Main Street Music, Tracy CA</title>
+<meta name="description" content="Main Street Music students perform twice a year in front of a real audience. Free to enter, open to family and friends. Downtown Tracy.">
+<link rel="canonical" href="https://www.tracyrocks.com/recitals.html">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.tracyrocks.com/recitals.html">
+<meta property="og:title" content="Student Recitals — Main Street Music, Tracy CA">
+<meta property="og:description" content="Our students perform twice a year in front of a real audience.">
+<meta property="og:image" content="https://www.tracyrocks.com/img/guitar-wall-1000.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- @stamp head-assets -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600..700&family=Geist:wght@400..600&display=swap">
+<link rel="stylesheet" href="css/site.css">
+<!-- @end head-assets -->
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div data-header-sentinel aria-hidden="true"></div>
+
+<!-- @stamp header -->
+<header class="site-header">
+  <div class="wrap site-header__bar">
+
+    <a class="site-header__logo" href="index.html" aria-label="Main Street Music — home">
+      <picture>
+        <source srcset="img/logo.webp" type="image/webp">
+        <img src="img/logo-src.png" width="411" height="200"
+             alt="Main Street Music, 45 West 10th Street, Tracy, CA. Where students come first.">
+      </picture>
+    </a>
+
+    <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">
+      <span class="nav-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+      Menu
+    </button>
+
+    <nav class="nav" id="primary-nav" aria-label="Primary">
+      <a href="lessons.html">Lessons</a>
+      <a href="teachers.html">Teachers</a>
+      <a href="rentals.html">Rentals</a>
+      <a href="repairs.html">Repairs</a>
+      <a href="gear.html">Gear</a>
+      <a href="visit.html">Visit</a>
+    </nav>
+
+    <div class="site-header__contact">
+      <a class="site-header__call" href="tel:+12098351125">(209) 835-1125</a>
+      <span class="status" data-status="compact" hidden></span>
+    </div>
+
+  </div>
+</header>
+<!-- @end header -->
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="wrap">
+      <a class="crumb" href="lessons.html">&larr; Lessons</a>
+      <span class="eyebrow">Recitals</span>
+      <h1>Playing for a room is a different skill. So we make sure they do it.</h1>
+      <p class="lede">Twice a year, our students get up in front of a real audience and play the thing they have been working on. Family, friends, and the nerves that go with it.</p>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="tel:+12098351125">Ask about the next one</a>
+        <a class="btn btn--ghost" href="lessons.html">How lessons work</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap feature reveal-stagger">
+
+      <div class="flow">
+        <span class="eyebrow">How it works</span>
+        <h2>Nobody is forced on stage, and nobody is left off it.</h2>
+        <div class="prose flow">
+          <p>Students who want to play, play. Their teacher helps pick a piece that will sound good on the day and works it with them in the weeks before.</p>
+          <p>Emma Hewitt organizes both recitals. If you want to know when the next one falls, or whether your student is ready for it, ask her teacher at the next lesson.</p>
+          <p>Beginners are welcome. A first recital is often thirty seconds long, and thirty seconds in front of an audience is worth a month of practice alone in a bedroom.</p>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="tel:+12098351125">Call (209)&nbsp;835-1125</a>
+          <a class="btn btn--ghost" href="mailto:mainstreetmusictracy@gmail.com?subject=Recital%20question">Email us</a>
+        </div>
+      </div>
+
+      <div>
+        <dl class="spec">
+          <div><dt>How often</dt><dd>Twice a year</dd></div>
+          <div><dt>Who plays</dt><dd>Any current student who wants to</dd></div>
+          <div><dt>Who can come</dt><dd>Family and friends</dd></div>
+          <div><dt>Cost to attend</dt><dd>Free</dd></div>
+          <div><dt>Next date</dt><dd><em>Announced in the store and on Facebook</em></dd></div>
+        </dl>
+
+        <!-- TODO (phase 5): put the confirmed dates and venue here once the
+             store provides them, plus photos from a past recital. -->
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section section--sunk">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Getting ready</span>
+          <h2>How a piece turns into a performance.</h2>
+          <p class="measure-short">The work happens in the ordinary weekly lessons. There is no separate rehearsal to sign up for.</p>
+        </div>
+      </div>
+
+      <ol class="steps reveal">
+        <li>
+          <div>
+            <h3>The teacher picks the piece</h3>
+            <p>Something the student can already mostly play, chosen to sound good in a room rather than to stretch them. A stretch piece is for the lesson, not the stage.</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>It gets polished, not learned</h3>
+            <p>The weeks before are spent on the parts that fall apart under pressure &mdash; the start, the ending, and the one bar that always trips.</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>They play it standing up, from memory or not</h3>
+            <p>Sheet music on a stand is fine. The point is playing for people, not proving a memory.</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Then they do it again in six months</h3>
+            <p>The second one is where you see the difference. The nerves are the same and the playing is not.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2>Where to go next</h2>
+      </div>
+
+      <div class="cards reveal-stagger">
+
+        <a class="card" href="lessons.html">
+          <h3>Start lessons</h3>
+          <p>One monthly rate, a weekly private lesson, a standing slot with the same teacher. Every age and level.</p>
+          <span class="card__cue">How lessons work</span>
+        </a>
+
+        <a class="card" href="teachers.html">
+          <h3>Meet the teachers</h3>
+          <p>Fourteen of them, most here a decade or more. Read who they are before you pick one.</p>
+          <span class="card__cue">The full roster</span>
+        </a>
+
+        <a class="card" href="rentals.html">
+          <h3>Need an instrument first?</h3>
+          <p>Band instruments go out on rent-to-own, so the payments count toward owning it.</p>
+          <span class="card__cue">What we rent</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- @stamp footer -->
+<footer class="site-footer">
+  <div class="wrap">
+
+    <div class="site-footer__visit">
+      <div class="flow">
+        <span class="eyebrow">Come in</span>
+        <h2>45 West 10th Street, downtown Tracy.</h2>
+        <div class="btn-row">
+          <a class="btn btn--light" href="https://www.google.com/maps/search/?api=1&amp;query=45+West+10th+Street+Tracy+CA+95376" target="_blank" rel="noopener">Get directions</a>
+          <a class="btn btn--light" href="tel:+12098351125">Call (209)&nbsp;835-1125</a>
+          <a class="btn btn--light" href="mailto:mainstreetmusictracy@gmail.com">Email us</a>
+        </div>
+      </div>
+
+      <div>
+        <h3>Store hours</h3>
+        <span class="status" data-status hidden></span>
+        <dl class="hours">
+          <div class="hours__row" data-day="1,2,3,4"><dt>Monday&ndash;Thursday</dt><dd>11am &ndash; 8pm</dd></div>
+          <div class="hours__row" data-day="5"><dt>Friday</dt><dd>11am &ndash; 6pm</dd></div>
+          <div class="hours__row" data-day="6"><dt>Saturday</dt><dd>10am &ndash; 4pm</dd></div>
+          <div class="hours__row" data-day="0"><dt>Sunday</dt><dd>Closed</dd></div>
+        </dl>
+      </div>
+    </div>
+
+    <div class="site-footer__grid">
+      <div>
+        <h3>Lessons</h3>
+        <ul>
+          <li><a href="lessons.html">How lessons work</a></li>
+          <li><a href="teachers.html">Our teachers</a></li>
+          <li><a href="recitals.html" aria-current="page">Recitals</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>The store</h3>
+        <ul>
+          <li><a href="gear.html">Gear we carry</a></li>
+          <li><a href="rentals.html">Rentals &amp; rent-to-own</a></li>
+          <li><a href="repairs.html">Repairs</a></li>
+          <li><a href="visit.html">Visit the shop</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Say hello</h3>
+        <ul>
+          <li><a href="mailto:mainstreetmusictracy@gmail.com">mainstreetmusictracy@gmail.com</a></li>
+          <li><a href="https://reverb.com/shop/mainstreetmusictracy" target="_blank" rel="noopener">Shop on Reverb</a></li>
+          <li><a href="https://www.facebook.com/mainstreetmusictracy/" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://www.instagram.com/mainstreetmusictracy/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.youtube.com/@MainStreetMusicTracy/videos" target="_blank" rel="noopener">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="site-footer__base">&copy; <span data-year>2026</span> Main Street Music, Inc.</p>
+
+  </div>
+</footer>
+<!-- @end footer -->
+
+<!-- @stamp callbar -->
+<div class="callbar">
+  <a class="btn btn--primary" href="tel:+12098351125">Call the store</a>
+  <a class="btn btn--light" href="mailto:mainstreetmusictracy@gmail.com?subject=Question%20for%20the%20store">Email us</a>
+</div>
+<!-- @end callbar -->
+
+<script src="js/site.js" defer></script>
+</body>
+</html>

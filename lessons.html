@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- @stamp head-top -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* .js gates the entrance animations. If site.js never runs, drop the gate
+   so the page renders plainly rather than staying hidden. */
+document.documentElement.className += " js";
+setTimeout(function () {
+  if (!window.msmReady) {
+    document.documentElement.className =
+      document.documentElement.className.replace(/\bjs\b/, "");
+  }
+}, 3000);
+</script>
+<!-- @end head-top -->
+
+<title>Music Lessons in Tracy, CA — Main Street Music</title>
+<meta name="description" content="Weekly private lessons on eight instrument families, taught one on one by working musicians. $135–$185 a month. Downtown Tracy since 1993.">
+<link rel="canonical" href="https://www.tracyrocks.com/lessons.html">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.tracyrocks.com/lessons.html">
+<meta property="og:title" content="Music Lessons in Tracy, CA — Main Street Music">
+<meta property="og:description" content="Weekly private lessons on eight instrument families, taught one on one by working musicians.">
+<meta property="og:image" content="https://www.tracyrocks.com/img/guitar-wall-1000.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- @stamp head-assets -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600..700&family=Geist:wght@400..600&display=swap">
+<link rel="stylesheet" href="css/site.css">
+<!-- @end head-assets -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Private music lessons",
+  "serviceType": "Music lessons",
+  "provider": { "@type": "MusicStore", "@id": "https://www.tracyrocks.com/#store", "name": "Main Street Music" },
+  "areaServed": { "@type": "City", "name": "Tracy, California" },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "USD",
+    "priceSpecification": { "@type": "PriceSpecification", "minPrice": 135, "maxPrice": 185, "priceCurrency": "USD" }
+  }
+}
+</script>
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div data-header-sentinel aria-hidden="true"></div>
+
+<!-- @stamp header -->
+<header class="site-header">
+  <div class="wrap site-header__bar">
+
+    <a class="site-header__logo" href="index.html" aria-label="Main Street Music — home">
+      <picture>
+        <source srcset="img/logo.webp" type="image/webp">
+        <img src="img/logo-src.png" width="411" height="200"
+             alt="Main Street Music, 45 West 10th Street, Tracy, CA. Where students come first.">
+      </picture>
+    </a>
+
+    <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">
+      <span class="nav-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+      Menu
+    </button>
+
+    <nav class="nav" id="primary-nav" aria-label="Primary">
+      <a href="lessons.html" aria-current="page">Lessons</a>
+      <a href="teachers.html">Teachers</a>
+      <a href="rentals.html">Rentals</a>
+      <a href="repairs.html">Repairs</a>
+      <a href="gear.html">Gear</a>
+      <a href="visit.html">Visit</a>
+    </nav>
+
+    <div class="site-header__contact">
+      <a class="site-header__call" href="tel:+12098351125">(209) 835-1125</a>
+      <span class="status" data-status="compact" hidden></span>
+    </div>
+
+  </div>
+</header>
+<!-- @end header -->
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">Lessons</span>
+      <h1>One teacher, one student, the same half hour every week.</h1>
+      <p class="lede">You pick a day and a time. That slot is yours, week after week, with the same teacher &mdash; which is the only way progress actually adds up.</p>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="tel:+12098351125">Call to book a slot</a>
+        <a class="btn btn--ghost" href="teachers.html">Meet the teachers</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap feature reveal-stagger">
+
+      <div class="flow">
+        <span class="eyebrow">What it costs</span>
+        <h2>One monthly rate. No enrolment fee, no contract.</h2>
+        <div class="prose flow">
+          <p>Lessons are billed by the month and cover a weekly private lesson. The range comes down to which teacher you study with &mdash; the most experienced teachers sit at the top of it.</p>
+          <p>The lesson calendar marks the weeks we are closed for holidays, so nobody pays for a week they cannot use.</p>
+        </div>
+
+        <div class="price-tag">
+          <strong>$135&ndash;$185</strong>
+          <span>per month, depending on the teacher</span>
+        </div>
+
+        <p class="note">Rates for half-hour versus hour-long lessons, and for siblings enrolling together, are worth asking about on the phone.</p>
+      </div>
+
+      <div>
+        <ul class="checklist">
+          <li><strong>Private, not group.</strong> Every lesson is one teacher and one student.</li>
+          <li><strong>A standing slot.</strong> Same day, same time, same room, same teacher.</li>
+          <li><strong>Every age and level.</strong> First-timers through advanced players, children through adults.</li>
+          <li><strong>Recitals twice a year.</strong> Students play for a real audience, not just a parent in a hallway.</li>
+          <li><strong>Instruments on hand.</strong> If you need one to start, you can rent or buy it at the front counter.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section section--sunk">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">What we teach</span>
+          <h2>Eight instrument families.</h2>
+        </div>
+        <a class="link-more" href="teachers.html">Who teaches what</a>
+      </div>
+
+      <ul class="checklist checklist--cols reveal">
+        <li><strong>Piano &amp; keyboard.</strong> Classical through jazz and pop.</li>
+        <li><strong>Guitar &amp; bass.</strong> Acoustic, electric and upright.</li>
+        <li><strong>Ukulele.</strong> A common first instrument for younger students.</li>
+        <li><strong>Voice.</strong> Technique, breath and repertoire.</li>
+        <li><strong>Brass.</strong> Trumpet, trombone and the rest of the section.</li>
+        <li><strong>Woodwinds.</strong> Flute, clarinet, saxophone, piccolo.</li>
+        <li><strong>Drums &amp; percussion.</strong> Kit, hand drums and mallets.</li>
+        <li><strong>Orchestral strings.</strong> Violin, viola, cello.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap feature reveal-stagger">
+
+      <div class="flow">
+        <span class="eyebrow">Getting started</span>
+        <h2>The fastest way in is a phone call.</h2>
+        <div class="prose flow">
+          <p>Tell us the instrument, roughly how old the student is, and which afternoons or evenings work. We will tell you which teachers have room and put you in the first open slot that fits.</p>
+          <p>Walking in works just as well. Somebody at the counter can check the schedule while you are standing there.</p>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="tel:+12098351125">Call (209)&nbsp;835-1125</a>
+          <a class="btn btn--ghost" href="mailto:mainstreetmusictracy@gmail.com?subject=Lesson%20enquiry">Email us</a>
+          <a class="btn btn--ghost" href="visit.html">Find the store</a>
+        </div>
+      </div>
+
+      <div>
+        <dl class="spec">
+          <div><dt>Lesson length</dt><dd>Half hour or hour</dd></div>
+          <div><dt>Frequency</dt><dd>Weekly, same slot</dd></div>
+          <div><dt>Billing</dt><dd>Monthly</dd></div>
+          <div><dt>Youngest students</dt><dd><em>Ask us &mdash; it depends on the instrument</em></dd></div>
+          <div><dt>Recitals</dt><dd>Twice a year</dd></div>
+        </dl>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TODO (phase 4): the inquiry form goes here — instrument, student age,
+       preferred days — posting to Formspree or Web3Forms. Phone-first until then. -->
+
+</main>
+
+<!-- @stamp footer -->
+<footer class="site-footer">
+  <div class="wrap">
+
+    <div class="site-footer__visit">
+      <div class="flow">
+        <span class="eyebrow">Come in</span>
+        <h2>45 West 10th Street, downtown Tracy.</h2>
+        <div class="btn-row">
+          <a class="btn btn--light" href="https://www.google.com/maps/search/?api=1&amp;query=45+West+10th+Street+Tracy+CA+95376" target="_blank" rel="noopener">Get directions</a>
+          <a class="btn btn--light" href="tel:+12098351125">Call (209)&nbsp;835-1125</a>
+          <a class="btn btn--light" href="mailto:mainstreetmusictracy@gmail.com">Email us</a>
+        </div>
+      </div>
+
+      <div>
+        <h3>Store hours</h3>
+        <span class="status" data-status hidden></span>
+        <dl class="hours">
+          <div class="hours__row" data-day="1,2,3,4"><dt>Monday&ndash;Thursday</dt><dd>11am &ndash; 8pm</dd></div>
+          <div class="hours__row" data-day="5"><dt>Friday</dt><dd>11am &ndash; 6pm</dd></div>
+          <div class="hours__row" data-day="6"><dt>Saturday</dt><dd>10am &ndash; 4pm</dd></div>
+          <div class="hours__row" data-day="0"><dt>Sunday</dt><dd>Closed</dd></div>
+        </dl>
+      </div>
+    </div>
+
+    <div class="site-footer__grid">
+      <div>
+        <h3>Lessons</h3>
+        <ul>
+          <li><a href="lessons.html" aria-current="page">How lessons work</a></li>
+          <li><a href="teachers.html">Our teachers</a></li>
+          <li><a href="recitals.html">Recitals</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>The store</h3>
+        <ul>
+          <li><a href="gear.html">Gear we carry</a></li>
+          <li><a href="rentals.html">Rentals &amp; rent-to-own</a></li>
+          <li><a href="repairs.html">Repairs</a></li>
+          <li><a href="visit.html">Visit the shop</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Say hello</h3>
+        <ul>
+          <li><a href="mailto:mainstreetmusictracy@gmail.com">mainstreetmusictracy@gmail.com</a></li>
+          <li><a href="https://reverb.com/shop/mainstreetmusictracy" target="_blank" rel="noopener">Shop on Reverb</a></li>
+          <li><a href="https://www.facebook.com/mainstreetmusictracy/" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://www.instagram.com/mainstreetmusictracy/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.youtube.com/@MainStreetMusicTracy/videos" target="_blank" rel="noopener">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="site-footer__base">&copy; <span data-year>2026</span> Main Street Music, Inc.</p>
+
+  </div>
+</footer>
+<!-- @end footer -->
+
+<!-- @stamp callbar -->
+<div class="callbar">
+  <a class="btn btn--primary" href="tel:+12098351125">Call the store</a>
+  <a class="btn btn--light" href="mailto:mainstreetmusictracy@gmail.com?subject=Question%20for%20the%20store">Email us</a>
+</div>
+<!-- @end callbar -->
+
+<script src="js/site.js" defer></script>
+</body>
+</html>
