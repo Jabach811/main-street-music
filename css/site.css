@@ -23,8 +23,8 @@
   --green:        #1f7a4d;
 
   /* type */
-  --font-display: "Fraunces", "Iowan Old Style", Georgia, serif;
-  --font-text:    "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: "Bricolage Grotesque", "Segoe UI", -apple-system, sans-serif;
+  --font-text:    "Instrument Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 
   --step--1: 0.875rem;
   --step-0:  1.0625rem;
@@ -123,15 +123,14 @@ button { background: none; border: 0; cursor: pointer; }
 /* ---------- typography ---------- */
 h1, h2, h3, h4 {
   font-family: var(--font-display);
-  font-weight: 650;
-  font-variation-settings: "SOFT" 0, "WONK" 0;
+  font-weight: 700;
   line-height: 1.08;
-  letter-spacing: -0.015em;
+  letter-spacing: -0.01em;
   text-wrap: balance;
 }
 
-h1 { font-size: var(--step-5); letter-spacing: -0.032em; }
-h2 { font-size: var(--step-4); letter-spacing: -0.024em; }
+h1 { font-size: var(--step-5); letter-spacing: -0.02em; }
+h2 { font-size: var(--step-4); letter-spacing: -0.015em; }
 h3 { font-size: var(--step-2); line-height: 1.18; }
 h4 { font-size: var(--step-1); line-height: 1.25; }
 
@@ -366,8 +365,7 @@ a:hover { color: var(--red); }
 .site-header__call {
   font-family: var(--font-display);
   font-size: var(--step-1);
-  font-weight: 650;
-  font-variation-settings: "SOFT" 0, "WONK" 0;
+  font-weight: 700;
   color: var(--ink);
   letter-spacing: -0.02em;
   line-height: 1.15;
@@ -428,8 +426,6 @@ a:hover { color: var(--red); }
 .hero__copy {
   padding-block: clamp(2.25rem, 5vw, 4.25rem);
   padding-inline: var(--gutter);
-  max-width: calc(var(--wrap) * 0.56 + var(--gutter));
-  margin-left: auto;
   width: 100%;
   align-self: center;
 }
@@ -458,8 +454,34 @@ a:hover { color: var(--red); }
 }
 
 @media (min-width: 62rem) {
-  .hero__grid { grid-template-columns: minmax(0, 1.12fr) minmax(0, 0.88fr); }
-  .hero__media { min-height: 100%; }
+  /* Three middle tracks sum to the wrap's text region, so column 2's left
+     edge lands exactly on the site's text alignment line. The 10% track is
+     where the copy panel overlaps the photo; the photo runs on through the
+     right margin track to the viewport edge. */
+  .hero__grid {
+    grid-template-columns:
+      minmax(var(--gutter), 1fr)
+      minmax(0, calc((var(--wrap) - var(--gutter) * 2) * 0.54))
+      minmax(0, calc((var(--wrap) - var(--gutter) * 2) * 0.10))
+      minmax(0, calc((var(--wrap) - var(--gutter) * 2) * 0.36))
+      minmax(var(--gutter), 1fr);
+  }
+  .hero__media {
+    grid-column: 3 / 6;
+    grid-row: 1;
+    min-height: clamp(32rem, 44vw, 46rem);
+  }
+  .hero__copy {
+    grid-column: 2 / 4;
+    grid-row: 1;
+    z-index: 1;
+    align-self: center;
+    background: var(--paper);
+    margin-block: var(--s-7);
+    padding: clamp(2.5rem, 4vw, 4rem);
+    padding-left: 0;
+    box-shadow: 0 1rem 3rem -1.5rem rgba(16, 42, 73, 0.45);
+  }
 }
 
 @media (max-width: 61.99rem) {
@@ -494,9 +516,8 @@ a:hover { color: var(--red); }
 .facts__list dt {
   font-family: var(--font-display);
   font-size: var(--step-2);
-  font-weight: 650;
-  font-variation-settings: "SOFT" 0, "WONK" 0;
-  letter-spacing: -0.02em;
+  font-weight: 700;
+  letter-spacing: -0.015em;
   color: var(--navy);
 }
 .facts__list dd {
@@ -525,9 +546,8 @@ a:hover { color: var(--red); }
 .price-tag strong {
   font-family: var(--font-display);
   font-size: var(--step-4);
-  font-weight: 650;
-  font-variation-settings: "SOFT" 0, "WONK" 0;
-  letter-spacing: -0.03em;
+  font-weight: 700;
+  letter-spacing: -0.02em;
   line-height: 1;
 }
 .price-tag span { font-size: var(--step--1); color: var(--ink-soft); }
@@ -678,7 +698,6 @@ a:hover { color: var(--red); }
   font-family: var(--font-display);
   font-size: var(--step-1);
   font-weight: 600;
-  font-variation-settings: "SOFT" 0, "WONK" 0;
   line-height: 1.35;
   letter-spacing: -0.015em;
 }
