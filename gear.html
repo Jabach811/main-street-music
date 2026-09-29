@@ -1,241 +1,91 @@
 <!doctype html>
 <html lang="en">
 <head>
-<!-- @stamp head-top -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script>
-/* .js gates the entrance animations. If site.js never runs, drop the gate
-   so the page renders plainly rather than staying hidden. */
-document.documentElement.className += " js";
-setTimeout(function () {
-  if (!window.msmReady) {
-    document.documentElement.className =
-      document.documentElement.className.replace(/\bjs\b/, "");
-  }
-}, 3000);
-</script>
-<!-- @end head-top -->
-
-<title>Guitars, Amps &amp; Band Instruments in Tracy, CA — Main Street Music</title>
-<meta name="description" content="New and used guitars, amps, keyboards, drums, brass, woodwinds and accessories from sixty-plus brands. Shop in person in downtown Tracy or online via Reverb.">
-<link rel="canonical" href="https://www.tracyrocks.com/gear.html">
-
+<title>Gear · Main Street Music, Tracy CA</title>
+<meta name="description" content="New and used instruments and equipment from 60+ brands. Guitars, amps, drums, keys, band instruments and live sound. Try it before you buy it.">
+<link rel="canonical" href="https://main-street-music.vercel.app/gear.html">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://www.tracyrocks.com/gear.html">
-<meta property="og:title" content="Guitars, Amps &amp; Band Instruments in Tracy, CA">
-<meta property="og:description" content="New and used gear from sixty-plus brands, in a real store you can walk into.">
-<meta property="og:image" content="https://www.tracyrocks.com/img/guitar-wall-1000.jpg">
+<meta property="og:site_name" content="Main Street Music">
+<meta property="og:url" content="https://main-street-music.vercel.app/gear.html">
+<meta property="og:title" content="Gear · Main Street Music, Tracy CA">
+<meta property="og:description" content="New and used instruments and equipment from 60+ brands. Guitars, amps, drums, keys, band instruments and live sound. Try it before you buy it.">
+<meta property="og:image" content="https://main-street-music.vercel.app/img/share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-
-<!-- @stamp head-assets -->
+<meta name="twitter:image" content="https://main-street-music.vercel.app/img/share.jpg">
+<meta name="theme-color" content="#15223d">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Instrument+Sans:wght@400..600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&amp;display=swap">
 <link rel="stylesheet" href="css/site.css">
-<!-- @end head-assets -->
 </head>
-
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
-<div data-header-sentinel aria-hidden="true"></div>
-
-<!-- @stamp header -->
-<header class="site-header">
-  <div class="wrap site-header__bar">
-
-    <a class="site-header__logo" href="index.html" aria-label="Main Street Music — home">
-      <picture>
-        <source srcset="img/logo.webp" type="image/webp">
-        <img src="img/logo-src.png" width="411" height="200"
-             alt="Main Street Music, 45 West 10th Street, Tracy, CA. Where students come first.">
-      </picture>
-    </a>
-
-    <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">
-      <span class="nav-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
-      Menu
-    </button>
-
-    <nav class="nav" id="primary-nav" aria-label="Primary">
-      <a href="lessons.html">Lessons</a>
-      <a href="teachers.html">Teachers</a>
-      <a href="rentals.html">Rentals</a>
-      <a href="repairs.html">Repairs</a>
-      <a href="gear.html" aria-current="page">Gear</a>
-      <a href="visit.html">Visit</a>
-    </nav>
-
-    <div class="site-header__contact">
-      <a class="site-header__call" href="tel:+12098351125">(209) 835-1125</a>
-      <span class="status" data-status="compact" hidden></span>
-    </div>
-
-  </div>
-</header>
-<!-- @end header -->
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar"><div class="wrap">
+  <a class="logo" href="index.html"><img src="img/logo.png" alt="Main Street Music, home" width="411" height="200"></a>
+  <nav aria-label="Main"><a href="lessons.html">Lessons</a><a href="teachers.html">Teachers</a><a href="gear.html" aria-current="page">Gear</a><a href="rentals.html">Rentals</a><a href="repairs.html">Repairs</a><a href="visit.html">Visit</a></nav>
+  <div class="right"><span class="status" data-status><i></i><span></span></span><a class="btn btn-red" href="tel:+12098351125"><span class="long">(209) 835-1125</span><span class="short">Call</span></a></div>
+</div></header>
 
 <main id="main">
+<section class="head"><div class="wrap">
+  <p class="kicker">Gear</p>
+  <h1 class="cx">Play it for ten minutes <em>first.</em></h1>
+  <p class="lede">New and used gear from sixty-plus brands. Take it off the wall, plug it in, and see how it feels in your hands before you spend a dime.</p>
+</div></section>
 
-  <section class="page-hero">
-    <div class="wrap">
-      <span class="eyebrow">Gear</span>
-      <h1>A room full of instruments you can actually pick up.</h1>
-      <p class="lede">New and used, from sixty-plus brands. Plug it in, play it for ten minutes, and find out whether it is the one before you spend the money.</p>
-      <div class="btn-row">
-        <a class="btn btn--primary" href="visit.html">Come try something</a>
-        <a class="btn btn--ghost" href="https://reverb.com/shop/mainstreetmusictracy" target="_blank" rel="noopener">Shop our Reverb store</a>
-      </div>
-    </div>
-  </section>
+<section class="sec"><div class="wrap">
+  <h2 class="cx">On the floor</h2>
+  <ul class="rows">
+    <li><span class="cx">Guitars &amp; basses</span><p>Acoustic, electric and bass, from first guitars to the good stuff.</p></li>
+    <li><span class="cx">Amps</span><p>Practice amps up to stage rigs. Plug in and turn it up.</p></li>
+    <li><span class="cx">Keyboards &amp; pianos</span><p>Digital pianos and keyboards for home, church and the stage.</p></li>
+    <li><span class="cx">Drums &amp; percussion</span><p>Kits, cymbals, heads, sticks and hand percussion.</p></li>
+    <li><span class="cx">Brass &amp; woodwinds</span><p>Band instruments, mouthpieces, reeds and care kits.</p></li>
+    <li><span class="cx">Mics &amp; live sound</span><p>Microphones, speakers, mixers and cables.</p></li>
+    <li><span class="cx">Strings &amp; reeds</span><p>The stuff you run out of. Always in stock.</p></li>
+    <li><span class="cx">Cases, stands &amp; straps</span><p>Everything that protects and holds up the rest.</p></li>
+  </ul>
+</div></section>
 
-  <section class="section">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <div>
-          <span class="eyebrow">On the floor</span>
-          <h2>What we carry.</h2>
-        </div>
-      </div>
+<section class="sec"><div class="wrap">
+  <h2 class="cx">Brands we carry</h2>
+  <p class="intro">Stock moves. If you're hunting for something specific, call before you drive over.</p>
+  <p class="brands"><span>Yamaha</span><span>Ibanez</span><span>Supro</span><span>Blackstar</span><span>Shure</span><span>Zildjian</span><span>Roland</span><span>Boss</span><span>Ernie Ball</span><span>D'Addario</span><span>Mapex</span><span>Vox</span><span>Laney</span><span>Seymour Duncan</span><span>Godin</span><span>Seagull</span><span>Remo</span><span>Evans</span><span>Conn-Selmer</span><span>Jupiter</span><span class="hot">and dozens more</span></p>
+</div></section>
 
-      <ul class="checklist checklist--cols reveal">
-        <li><strong>Guitars &amp; basses.</strong> Acoustic, electric and upright, new and used.</li>
-        <li><strong>Amplifiers.</strong> Practice amps through stage rigs.</li>
-        <li><strong>Keyboards &amp; pianos.</strong> Weighted digitals, stage boards, synths.</li>
-        <li><strong>Drums &amp; percussion.</strong> Kits, hardware, cymbals, hand drums.</li>
-        <li><strong>Brass &amp; woodwinds.</strong> The full school band lineup.</li>
-        <li><strong>Microphones &amp; live sound.</strong> Mics, stands, cables, speakers.</li>
-        <li><strong>Strings &amp; reeds.</strong> The consumables you run out of mid-week.</li>
-        <li><strong>Cases, stands &amp; straps.</strong> The unglamorous half of owning an instrument.</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="section section--sunk">
-    <div class="wrap feature reveal-stagger">
-
-      <div class="flow">
-        <span class="eyebrow">Brands</span>
-        <h2>Sixty-plus names on the wall.</h2>
-        <div class="prose flow">
-          <p>Yamaha, Shure, Zildjian, D&rsquo;Addario and Roland are the ones you will recognize, and there are dozens more behind them.</p>
-          <p>Stock moves, so what is here this week is not what was here last week. If you are hunting something specific, call before you drive over and we will look for you.</p>
-        </div>
-        <div class="btn-row">
-          <a class="btn btn--primary" href="tel:+12098351125">Ask if we have it</a>
-          <a class="btn btn--ghost" href="mailto:mainstreetmusictracy@gmail.com?subject=Gear%20enquiry">Email us</a>
-        </div>
-      </div>
-
-      <div>
-        <ul class="checklist">
-          <li><strong>Used gear too.</strong> Trade-ins and consignments come through regularly, often at a fraction of new.</li>
-          <li><strong>Set up before it leaves.</strong> Our tech is in the building, so instruments go out playing right.</li>
-          <li><strong>Online as well.</strong> Our used inventory is listed on Reverb if you would rather browse from the couch.</li>
-        </ul>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <h2>Where to go next</h2>
-      </div>
-
-      <div class="cards reveal-stagger">
-
-        <a class="card" href="rentals.html">
-          <h3>Not sure yet? Rent it.</h3>
-          <p>Band instruments go out on rent-to-own, so the money counts toward owning it if the student sticks with it.</p>
-          <span class="card__cue">How rentals work</span>
-        </a>
-
-        <a class="card" href="repairs.html">
-          <h3>Already own one? Get it playing.</h3>
-          <p>Restrings, setups, intonation and pickup work by our in-house tech. From $38.</p>
-          <span class="card__cue">Repair services</span>
-        </a>
-
-      </div>
-    </div>
-  </section>
-
+<section class="sec alt"><div class="wrap">
+  <h2 class="cx">Used, trade-ins and consignment</h2>
+  <div class="rows">
+    <div><span class="cx">Used gear</span><p>Every used instrument gets set up on our bench before it leaves the store.</p></div>
+    <div><span class="cx">Trade-ins</span><p>Bring in what you're not playing and put it toward what you want.</p></div>
+    <div><span class="cx">Consignment</span><p>We'll sell it for you. Ask at the counter how it works.</p></div>
+    <div><span class="cx">Shop online</span><p>Our used inventory is also listed on <a href="https://reverb.com/shop/mainstreetmusictracy">Reverb</a>.</p></div>
+  </div>
+</div></section>
 </main>
 
-<!-- @stamp footer -->
-<footer class="site-footer">
-  <div class="wrap">
-
-    <div class="site-footer__visit">
-      <div class="flow">
-        <span class="eyebrow">Come in</span>
-        <h2>45 West 10th Street, downtown Tracy.</h2>
-        <div class="btn-row">
-          <a class="btn btn--light" href="https://www.google.com/maps/search/?api=1&amp;query=45+West+10th+Street+Tracy+CA+95376" target="_blank" rel="noopener">Get directions</a>
-          <a class="btn btn--light" href="tel:+12098351125">Call (209)&nbsp;835-1125</a>
-          <a class="btn btn--light" href="mailto:mainstreetmusictracy@gmail.com">Email us</a>
-        </div>
-      </div>
-
-      <div>
-        <h3>Store hours</h3>
-        <span class="status" data-status hidden></span>
-        <dl class="hours">
-          <div class="hours__row" data-day="1,2,3,4"><dt>Monday&ndash;Thursday</dt><dd>11am &ndash; 8pm</dd></div>
-          <div class="hours__row" data-day="5"><dt>Friday</dt><dd>11am &ndash; 6pm</dd></div>
-          <div class="hours__row" data-day="6"><dt>Saturday</dt><dd>10am &ndash; 4pm</dd></div>
-          <div class="hours__row" data-day="0"><dt>Sunday</dt><dd>Closed</dd></div>
-        </dl>
-      </div>
-    </div>
-
-    <div class="site-footer__grid">
-      <div>
-        <h3>Lessons</h3>
-        <ul>
-          <li><a href="lessons.html">How lessons work</a></li>
-          <li><a href="teachers.html">Our teachers</a></li>
-          <li><a href="recitals.html">Recitals</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h3>The store</h3>
-        <ul>
-          <li><a href="gear.html" aria-current="page">Gear we carry</a></li>
-          <li><a href="rentals.html">Rentals &amp; rent-to-own</a></li>
-          <li><a href="repairs.html">Repairs</a></li>
-          <li><a href="visit.html">Visit the shop</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h3>Say hello</h3>
-        <ul>
-          <li><a href="mailto:mainstreetmusictracy@gmail.com">mainstreetmusictracy@gmail.com</a></li>
-          <li><a href="https://reverb.com/shop/mainstreetmusictracy" target="_blank" rel="noopener">Shop on Reverb</a></li>
-          <li><a href="https://www.facebook.com/mainstreetmusictracy/" target="_blank" rel="noopener">Facebook</a></li>
-          <li><a href="https://www.instagram.com/mainstreetmusictracy/" target="_blank" rel="noopener">Instagram</a></li>
-          <li><a href="https://www.youtube.com/@MainStreetMusicTracy/videos" target="_blank" rel="noopener">YouTube</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <p class="site-footer__base">&copy; <span data-year>2026</span> Main Street Music, Inc.</p>
-
+<footer><div class="wrap">
+  <div class="top">
+    <div><h2 class="cx">45 West 10th Street, downtown Tracy.</h2>
+      <div class="btns"><a class="btn btn-red" href="https://www.google.com/maps/search/?api=1&amp;query=45+West+10th+Street+Tracy+CA+95376">Get directions</a><a class="btn btn-line" href="tel:+12098351125">(209) 835-1125</a></div></div>
+    <dl data-hours>
+      <div data-day="1,2,3,4"><dt>Monday–Thursday</dt><dd>11am – 8pm</dd></div>
+      <div data-day="5"><dt>Friday</dt><dd>11am – 6pm</dd></div>
+      <div data-day="6"><dt>Saturday</dt><dd>10am – 4pm</dd></div>
+      <div data-day="0"><dt>Sunday</dt><dd>Closed</dd></div>
+    </dl>
   </div>
-</footer>
-<!-- @end footer -->
-
-<!-- @stamp callbar -->
-<div class="callbar">
-  <a class="btn btn--primary" href="tel:+12098351125">Call the store</a>
-  <a class="btn btn--light" href="mailto:mainstreetmusictracy@gmail.com?subject=Question%20for%20the%20store">Email us</a>
-</div>
-<!-- @end callbar -->
-
-<script src="js/site.js" defer></script>
+  <div class="base">
+    <p>© 2026 Main Street Music, Inc. · Where students come first.</p>
+    <nav aria-label="More"><a href="recitals.html">Recitals</a><a href="mailto:mainstreetmusictracy@gmail.com">Email us</a><a href="https://www.facebook.com/mainstreetmusictracy/">Facebook</a><a href="https://www.instagram.com/mainstreetmusictracy/">Instagram</a><a href="https://www.youtube.com/@MainStreetMusicTracy/videos">YouTube</a><a href="https://reverb.com/shop/mainstreetmusictracy">Reverb</a></nav>
+  </div>
+</div></footer>
+<script src="js/site.js"></script>
 </body>
 </html>

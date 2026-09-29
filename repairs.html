@@ -1,235 +1,81 @@
 <!doctype html>
 <html lang="en">
 <head>
-<!-- @stamp head-top -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script>
-/* .js gates the entrance animations. If site.js never runs, drop the gate
-   so the page renders plainly rather than staying hidden. */
-document.documentElement.className += " js";
-setTimeout(function () {
-  if (!window.msmReady) {
-    document.documentElement.className =
-      document.documentElement.className.replace(/\bjs\b/, "");
-  }
-}, 3000);
-</script>
-<!-- @end head-top -->
-
-<title>Guitar Setups &amp; Instrument Repair in Tracy, CA — Main Street Music</title>
-<meta name="description" content="In-house restrings, full setups, intonation, pickup installs and rewiring. Warranty work as an authorized dealer. Repairs from $38 in downtown Tracy.">
-<link rel="canonical" href="https://www.tracyrocks.com/repairs.html">
-
+<title>Repairs & setups · Main Street Music, Tracy CA</title>
+<meta name="description" content="Restrings from $38, full setups, pickup installs and rewiring on the bench in back. You get a look and a price before any work starts.">
+<link rel="canonical" href="https://main-street-music.vercel.app/repairs.html">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://www.tracyrocks.com/repairs.html">
-<meta property="og:title" content="Guitar Setups &amp; Instrument Repair in Tracy, CA">
-<meta property="og:description" content="Restrings, full setups, pickup installs and rewiring by our in-house tech. From $38.">
-<meta property="og:image" content="https://www.tracyrocks.com/img/guitar-wall-1000.jpg">
+<meta property="og:site_name" content="Main Street Music">
+<meta property="og:url" content="https://main-street-music.vercel.app/repairs.html">
+<meta property="og:title" content="Repairs & setups · Main Street Music, Tracy CA">
+<meta property="og:description" content="Restrings from $38, full setups, pickup installs and rewiring on the bench in back. You get a look and a price before any work starts.">
+<meta property="og:image" content="https://main-street-music.vercel.app/img/share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-
-<!-- @stamp head-assets -->
+<meta name="twitter:image" content="https://main-street-music.vercel.app/img/share.jpg">
+<meta name="theme-color" content="#15223d">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Instrument+Sans:wght@400..600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&amp;display=swap">
 <link rel="stylesheet" href="css/site.css">
-<!-- @end head-assets -->
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Instrument repair and setup",
-  "serviceType": "Musical instrument repair",
-  "provider": { "@type": "MusicStore", "@id": "https://www.tracyrocks.com/#store", "name": "Main Street Music" },
-  "areaServed": { "@type": "City", "name": "Tracy, California" },
-  "offers": {
-    "@type": "Offer",
-    "priceCurrency": "USD",
-    "priceSpecification": { "@type": "PriceSpecification", "minPrice": 38, "priceCurrency": "USD" }
-  }
-}
-</script>
 </head>
-
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
-<div data-header-sentinel aria-hidden="true"></div>
-
-<!-- @stamp header -->
-<header class="site-header">
-  <div class="wrap site-header__bar">
-
-    <a class="site-header__logo" href="index.html" aria-label="Main Street Music — home">
-      <picture>
-        <source srcset="img/logo.webp" type="image/webp">
-        <img src="img/logo-src.png" width="411" height="200"
-             alt="Main Street Music, 45 West 10th Street, Tracy, CA. Where students come first.">
-      </picture>
-    </a>
-
-    <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">
-      <span class="nav-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
-      Menu
-    </button>
-
-    <nav class="nav" id="primary-nav" aria-label="Primary">
-      <a href="lessons.html">Lessons</a>
-      <a href="teachers.html">Teachers</a>
-      <a href="rentals.html">Rentals</a>
-      <a href="repairs.html" aria-current="page">Repairs</a>
-      <a href="gear.html">Gear</a>
-      <a href="visit.html">Visit</a>
-    </nav>
-
-    <div class="site-header__contact">
-      <a class="site-header__call" href="tel:+12098351125">(209) 835-1125</a>
-      <span class="status" data-status="compact" hidden></span>
-    </div>
-
-  </div>
-</header>
-<!-- @end header -->
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar"><div class="wrap">
+  <a class="logo" href="index.html"><img src="img/logo.png" alt="Main Street Music, home" width="411" height="200"></a>
+  <nav aria-label="Main"><a href="lessons.html">Lessons</a><a href="teachers.html">Teachers</a><a href="gear.html">Gear</a><a href="rentals.html">Rentals</a><a href="repairs.html" aria-current="page">Repairs</a><a href="visit.html">Visit</a></nav>
+  <div class="right"><span class="status" data-status><i></i><span></span></span><a class="btn btn-red" href="tel:+12098351125"><span class="long">(209) 835-1125</span><span class="short">Call</span></a></div>
+</div></header>
 
 <main id="main">
+<section class="head"><div class="wrap">
+  <p class="kicker">Repairs</p>
+  <h1 class="cx">Most guitars that play badly aren't <em>broken.</em></h1>
+  <p class="lede">They're just set up wrong. Bring it to the bench in the back. You get a look and a price before anybody touches it. No appointment needed.</p>
+</div></section>
 
-  <section class="page-hero">
-    <div class="wrap">
-      <span class="eyebrow">Repairs</span>
-      <h1>Most guitars that play badly are not broken. They are just set up wrong.</h1>
-      <p class="lede">Restrings, full setups, intonation, pickup installs and rewiring, done in house by our own tech. Bring it in and we will tell you what it actually needs.</p>
-      <div class="btn-row">
-        <a class="btn btn--primary" href="tel:+12098351125">Ask about your instrument</a>
-        <a class="btn btn--ghost" href="visit.html">Bring it in</a>
-      </div>
-    </div>
-  </section>
+<section class="sec"><div class="wrap">
+  <h2 class="cx">On the bench</h2>
+  <ul class="rows">
+    <li><span class="cx">Restring &amp; clean</span><p><strong>From $38.</strong> New strings, a cleanup, and the neck conditioned.</p></li>
+    <li><span class="cx">Full setup</span><p>Action and intonation dialed in. Quoted at the counter.</p></li>
+    <li><span class="cx">Pickup install</span><p>Quoted at the counter.</p></li>
+    <li><span class="cx">Electronics &amp; rewiring</span><p>Scratchy knobs, dead jacks, new wiring. Quoted at the counter.</p></li>
+    <li><span class="cx">Warranty work</span><p>We're an authorized dealer, so covered repairs can be handled here.</p></li>
+  </ul>
+</div></section>
 
-  <section class="section">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <div>
-          <span class="eyebrow">What we do</span>
-          <h2>The bench work, and what it starts at.</h2>
-        </div>
-      </div>
-
-      <dl class="spec reveal">
-        <div><dt>Restring, clean &amp; neck conditioning</dt><dd>from $38</dd></div>
-        <div><dt>Full setup &mdash; action &amp; intonation</dt><dd><em>Quoted at the counter</em></dd></div>
-        <div><dt>Pickup installation</dt><dd><em>Quoted at the counter</em></dd></div>
-        <div><dt>Electronics &amp; rewiring</dt><dd><em>Quoted at the counter</em></dd></div>
-        <div><dt>Warranty work</dt><dd>Authorised dealer</dd></div>
-      </dl>
-
-      <!-- TODO (phase 5): get the current bench rate card from the store and
-           replace the "quoted at the counter" placeholders with real numbers. -->
-    </div>
-  </section>
-
-  <section class="section section--sunk">
-    <div class="wrap feature reveal-stagger">
-
-      <div class="flow">
-        <span class="eyebrow">A setup, in plain terms</span>
-        <h2>What a setup actually changes.</h2>
-        <div class="prose flow">
-          <p>Action is how far the strings sit above the fretboard. Too high and the instrument fights you; too low and it buzzes. A setup dials that in.</p>
-          <p>Intonation is whether the instrument stays in tune as you move up the neck. If chords sound fine at the first fret and sour at the twelfth, that is intonation, and it is fixable.</p>
-          <p>Wood moves with the seasons. A guitar that felt perfect in June can feel wrong in December, and that is normal, not damage.</p>
-        </div>
-        <div class="btn-row">
-          <a class="btn btn--primary" href="tel:+12098351125">Call (209)&nbsp;835-1125</a>
-          <a class="btn btn--ghost" href="mailto:mainstreetmusictracy@gmail.com?subject=Repair%20enquiry">Email us</a>
-        </div>
-      </div>
-
-      <div>
-        <ul class="checklist">
-          <li><strong>Authorised dealer.</strong> Warranty repairs on the brands we sell are handled here, not shipped away.</li>
-          <li><strong>You get a look first.</strong> We tell you what it needs and what it costs before anything happens.</li>
-          <li><strong>Rentals get it too.</strong> The same tech services every instrument that goes out on rental.</li>
-          <li><strong>Bring it as it is.</strong> No appointment, no packing, no shipping. Walk it through the door.</li>
-        </ul>
-      </div>
-
-    </div>
-  </section>
-
+<section class="sec alt"><div class="wrap">
+  <h2 class="cx">What those words mean</h2>
+  <div class="rows">
+    <div><span class="cx">Action</span><p>How high the strings sit above the neck. Too high and it's hard to press down. Too low and it buzzes.</p></div>
+    <div><span class="cx">Intonation</span><p>Whether the guitar stays in tune as you play higher up the neck. If chords sound sour up there, this is why.</p></div>
+    <div><span class="cx">The seasons</span><p>Wood swells and shrinks with the weather. A guitar that played great in spring can feel off by fall. A setup fixes it.</p></div>
+  </div>
+</div></section>
 </main>
 
-<!-- @stamp footer -->
-<footer class="site-footer">
-  <div class="wrap">
-
-    <div class="site-footer__visit">
-      <div class="flow">
-        <span class="eyebrow">Come in</span>
-        <h2>45 West 10th Street, downtown Tracy.</h2>
-        <div class="btn-row">
-          <a class="btn btn--light" href="https://www.google.com/maps/search/?api=1&amp;query=45+West+10th+Street+Tracy+CA+95376" target="_blank" rel="noopener">Get directions</a>
-          <a class="btn btn--light" href="tel:+12098351125">Call (209)&nbsp;835-1125</a>
-          <a class="btn btn--light" href="mailto:mainstreetmusictracy@gmail.com">Email us</a>
-        </div>
-      </div>
-
-      <div>
-        <h3>Store hours</h3>
-        <span class="status" data-status hidden></span>
-        <dl class="hours">
-          <div class="hours__row" data-day="1,2,3,4"><dt>Monday&ndash;Thursday</dt><dd>11am &ndash; 8pm</dd></div>
-          <div class="hours__row" data-day="5"><dt>Friday</dt><dd>11am &ndash; 6pm</dd></div>
-          <div class="hours__row" data-day="6"><dt>Saturday</dt><dd>10am &ndash; 4pm</dd></div>
-          <div class="hours__row" data-day="0"><dt>Sunday</dt><dd>Closed</dd></div>
-        </dl>
-      </div>
-    </div>
-
-    <div class="site-footer__grid">
-      <div>
-        <h3>Lessons</h3>
-        <ul>
-          <li><a href="lessons.html">How lessons work</a></li>
-          <li><a href="teachers.html">Our teachers</a></li>
-          <li><a href="recitals.html">Recitals</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h3>The store</h3>
-        <ul>
-          <li><a href="gear.html">Gear we carry</a></li>
-          <li><a href="rentals.html">Rentals &amp; rent-to-own</a></li>
-          <li><a href="repairs.html" aria-current="page">Repairs</a></li>
-          <li><a href="visit.html">Visit the shop</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h3>Say hello</h3>
-        <ul>
-          <li><a href="mailto:mainstreetmusictracy@gmail.com">mainstreetmusictracy@gmail.com</a></li>
-          <li><a href="https://reverb.com/shop/mainstreetmusictracy" target="_blank" rel="noopener">Shop on Reverb</a></li>
-          <li><a href="https://www.facebook.com/mainstreetmusictracy/" target="_blank" rel="noopener">Facebook</a></li>
-          <li><a href="https://www.instagram.com/mainstreetmusictracy/" target="_blank" rel="noopener">Instagram</a></li>
-          <li><a href="https://www.youtube.com/@MainStreetMusicTracy/videos" target="_blank" rel="noopener">YouTube</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <p class="site-footer__base">&copy; <span data-year>2026</span> Main Street Music, Inc.</p>
-
+<footer><div class="wrap">
+  <div class="top">
+    <div><h2 class="cx">45 West 10th Street, downtown Tracy.</h2>
+      <div class="btns"><a class="btn btn-red" href="https://www.google.com/maps/search/?api=1&amp;query=45+West+10th+Street+Tracy+CA+95376">Get directions</a><a class="btn btn-line" href="tel:+12098351125">(209) 835-1125</a></div></div>
+    <dl data-hours>
+      <div data-day="1,2,3,4"><dt>Monday–Thursday</dt><dd>11am – 8pm</dd></div>
+      <div data-day="5"><dt>Friday</dt><dd>11am – 6pm</dd></div>
+      <div data-day="6"><dt>Saturday</dt><dd>10am – 4pm</dd></div>
+      <div data-day="0"><dt>Sunday</dt><dd>Closed</dd></div>
+    </dl>
   </div>
-</footer>
-<!-- @end footer -->
-
-<!-- @stamp callbar -->
-<div class="callbar">
-  <a class="btn btn--primary" href="tel:+12098351125">Call the store</a>
-  <a class="btn btn--light" href="mailto:mainstreetmusictracy@gmail.com?subject=Question%20for%20the%20store">Email us</a>
-</div>
-<!-- @end callbar -->
-
-<script src="js/site.js" defer></script>
+  <div class="base">
+    <p>© 2026 Main Street Music, Inc. · Where students come first.</p>
+    <nav aria-label="More"><a href="recitals.html">Recitals</a><a href="mailto:mainstreetmusictracy@gmail.com">Email us</a><a href="https://www.facebook.com/mainstreetmusictracy/">Facebook</a><a href="https://www.instagram.com/mainstreetmusictracy/">Instagram</a><a href="https://www.youtube.com/@MainStreetMusicTracy/videos">YouTube</a><a href="https://reverb.com/shop/mainstreetmusictracy">Reverb</a></nav>
+  </div>
+</div></footer>
+<script src="js/site.js"></script>
 </body>
 </html>

@@ -1,381 +1,116 @@
 <!doctype html>
 <html lang="en">
 <head>
-<!-- @stamp head-top -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script>
-/* .js gates the entrance animations. If site.js never runs, drop the gate
-   so the page renders plainly rather than staying hidden. */
-document.documentElement.className += " js";
-setTimeout(function () {
-  if (!window.msmReady) {
-    document.documentElement.className =
-      document.documentElement.className.replace(/\bjs\b/, "");
-  }
-}, 3000);
-</script>
-<!-- @end head-top -->
-
-<title>Main Street Music — Lessons, Gear, Rentals &amp; Repairs in Tracy, CA</title>
-<meta name="description" content="Private music lessons on eight instruments, taught by working musicians. Plus instrument sales, rentals, rent-to-own and in-house repairs. Downtown Tracy since 1993.">
-<link rel="canonical" href="https://www.tracyrocks.com/">
-
-<meta property="og:type" content="business.business">
-<meta property="og:url" content="https://www.tracyrocks.com/">
-<meta property="og:title" content="Main Street Music — Lessons, Gear, Rentals &amp; Repairs in Tracy, CA">
-<meta property="og:description" content="Private music lessons on eight instruments, taught by working musicians. Downtown Tracy since 1993.">
-<meta property="og:image" content="https://www.tracyrocks.com/img/guitar-wall-1000.jpg">
+<title>Main Street Music · Lessons, gear, rentals and repairs in Tracy, CA</title>
+<meta name="description" content="Downtown Tracy's music store since 1993. Private lessons with fourteen teachers, new and used gear from 60+ brands, rent-to-own band instruments, and repairs on the bench in back.">
+<link rel="canonical" href="https://main-street-music.vercel.app/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Main Street Music">
+<meta property="og:url" content="https://main-street-music.vercel.app/">
+<meta property="og:title" content="Main Street Music · Lessons, gear, rentals and repairs in Tracy, CA">
+<meta property="og:description" content="Downtown Tracy's music store since 1993. Private lessons with fourteen teachers, new and used gear from 60+ brands, rent-to-own band instruments, and repairs on the bench in back.">
+<meta property="og:image" content="https://main-street-music.vercel.app/img/share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-
-<!-- @stamp head-assets -->
+<meta name="twitter:image" content="https://main-street-music.vercel.app/img/share.jpg">
+<meta name="theme-color" content="#15223d">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Instrument+Sans:wght@400..600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&amp;display=swap">
 <link rel="stylesheet" href="css/site.css">
-<!-- @end head-assets -->
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "MusicStore",
-  "@id": "https://www.tracyrocks.com/#store",
-  "name": "Main Street Music",
-  "alternateName": "Main Street Music, Inc.",
-  "url": "https://www.tracyrocks.com/",
-  "telephone": "+1-209-835-1125",
-  "email": "mainstreetmusictracy@gmail.com",
-  "foundingDate": "1993-06",
-  "slogan": "Where Students Come First",
-  "priceRange": "$$",
-  "image": "https://www.tracyrocks.com/img/guitar-wall-1000.jpg",
-  "logo": "https://www.tracyrocks.com/img/logo.png",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "45 West 10th Street",
-    "addressLocality": "Tracy",
-    "addressRegion": "CA",
-    "postalCode": "95376",
-    "addressCountry": "US"
-  },
-  "openingHoursSpecification": [
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "11:00", "closes": "20:00" },
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "11:00", "closes": "18:00" },
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "16:00" }
-  ],
-  "sameAs": [
-    "https://www.facebook.com/mainstreetmusictracy/",
-    "https://www.instagram.com/mainstreetmusictracy/",
-    "https://www.youtube.com/@MainStreetMusicTracy/videos",
-    "https://reverb.com/shop/mainstreetmusictracy"
-  ],
-  "makesOffer": [
-    { "@type": "Offer", "name": "Private music lessons", "priceCurrency": "USD", "priceSpecification": { "@type": "PriceSpecification", "minPrice": 135, "maxPrice": 185, "priceCurrency": "USD" } },
-    { "@type": "Offer", "name": "Instrument repair and setup", "priceCurrency": "USD", "priceSpecification": { "@type": "PriceSpecification", "minPrice": 38, "priceCurrency": "USD" } },
-    { "@type": "Offer", "name": "Instrument and PA equipment rentals" }
-  ],
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Private lessons",
-    "itemListElement": [
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Piano and keyboard lessons" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Guitar and bass lessons" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ukulele lessons" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Voice lessons" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Brass lessons" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Woodwind lessons" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Drum and percussion lessons" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Orchestral string lessons" } }
-    ]
-  }
-}
-</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "MusicStore", "@id": "https://main-street-music.vercel.app/#store", "name": "Main Street Music", "alternateName": "Main Street Music, Inc.", "url": "https://main-street-music.vercel.app/", "telephone": "+1-209-835-1125", "email": "mainstreetmusictracy@gmail.com", "foundingDate": "1993-06-01", "slogan": "Where Students Come First", "priceRange": "$$", "image": "https://main-street-music.vercel.app/img/guitar-wall-1440.jpg", "logo": "https://main-street-music.vercel.app/img/logo.png", "address": {"@type": "PostalAddress", "streetAddress": "45 West 10th Street", "addressLocality": "Tracy", "addressRegion": "CA", "postalCode": "95376", "addressCountry": "US"}, "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"], "opens": "11:00", "closes": "20:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "11:00", "closes": "18:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "16:00"}], "sameAs": ["https://www.facebook.com/mainstreetmusictracy/", "https://www.instagram.com/mainstreetmusictracy/", "https://www.youtube.com/@MainStreetMusicTracy/videos", "https://reverb.com/shop/mainstreetmusictracy"]}</script>
 </head>
-
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
-<div data-header-sentinel aria-hidden="true"></div>
-
-<!-- @stamp header -->
-<header class="site-header">
-  <div class="wrap site-header__bar">
-
-    <a class="site-header__logo" href="index.html" aria-label="Main Street Music — home">
-      <picture>
-        <source srcset="img/logo.webp" type="image/webp">
-        <img src="img/logo-src.png" width="411" height="200"
-             alt="Main Street Music, 45 West 10th Street, Tracy, CA. Where students come first.">
-      </picture>
-    </a>
-
-    <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">
-      <span class="nav-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
-      Menu
-    </button>
-
-    <nav class="nav" id="primary-nav" aria-label="Primary">
-      <a href="lessons.html">Lessons</a>
-      <a href="teachers.html">Teachers</a>
-      <a href="rentals.html">Rentals</a>
-      <a href="repairs.html">Repairs</a>
-      <a href="gear.html">Gear</a>
-      <a href="visit.html">Visit</a>
-    </nav>
-
-    <div class="site-header__contact">
-      <a class="site-header__call" href="tel:+12098351125">(209) 835-1125</a>
-      <span class="status" data-status="compact" hidden></span>
-    </div>
-
-  </div>
-</header>
-<!-- @end header -->
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar"><div class="wrap">
+  <a class="logo" href="index.html"><img src="img/logo.png" alt="Main Street Music, home" width="411" height="200"></a>
+  <nav aria-label="Main"><a href="lessons.html">Lessons</a><a href="teachers.html">Teachers</a><a href="gear.html">Gear</a><a href="rentals.html">Rentals</a><a href="repairs.html">Repairs</a><a href="visit.html">Visit</a></nav>
+  <div class="right"><span class="status" data-status><i></i><span></span></span><a class="btn btn-red" href="tel:+12098351125"><span class="long">(209) 835-1125</span><span class="short">Call</span></a></div>
+</div></header>
 
 <main id="main">
-
-  <!-- ============ hero ============ -->
-  <section class="hero">
-    <div class="hero__grid">
-
-      <div class="hero__copy">
-        <span class="eyebrow">Downtown Tracy &middot; Est. 1993</span>
-        <h1>Tracy has been learning to play here <em>for <span data-years-since="1993-06">thirty-three</span> years.</em></h1>
-        <p class="lede">Private lessons on eight instruments, taught by working musicians. Plus gear, rentals and repairs, all under one roof on 10th Street.</p>
-
-        <p class="hero__address">45 West 10th Street, downtown Tracy</p>
-
-        <div class="btn-row">
-          <a class="btn btn--primary" href="lessons.html">Start lessons</a>
-          <a class="btn btn--ghost" href="tel:+12098351125">Call (209)&nbsp;835-1125</a>
-        </div>
-      </div>
-
-      <div class="hero__media">
-        <picture>
-          <source type="image/webp"
-                  srcset="img/guitar-wall-700.webp 700w, img/guitar-wall-1000.webp 1000w, img/guitar-wall-1440.webp 1440w"
-                  sizes="(min-width: 62rem) 50vw, 100vw">
-          <img src="img/guitar-wall-1000.jpg"
-               srcset="img/guitar-wall-700.jpg 700w, img/guitar-wall-1000.jpg 1000w, img/guitar-wall-1440.jpg 1440w"
-               sizes="(min-width: 62rem) 50vw, 100vw"
-               width="1440" height="1080" fetchpriority="high" decoding="async"
-               alt="A wall of electric and acoustic guitars hanging in the Main Street Music showroom.">
-        </picture>
-      </div>
-
+<section class="hero">
+  <picture><source type="image/webp" srcset="img/guitar-wall-700.webp 700w, img/guitar-wall-1000.webp 1000w, img/guitar-wall-1440.webp 1440w" sizes="100vw"><img src="img/guitar-wall-1440.jpg" srcset="img/guitar-wall-700.jpg 700w, img/guitar-wall-1000.jpg 1000w, img/guitar-wall-1440.jpg 1440w" sizes="100vw" alt="The guitar wall inside Main Street Music" fetchpriority="high"></picture>
+  <div class="wrap">
+    <h1 class="cx">The loudest room on <em>10th Street.</em></h1>
+    <div class="hero-foot">
+      <p>Lessons, gear, rentals and repairs in downtown Tracy since 1993. Take a guitar off the wall, plug it in, and play it.</p>
+      <div class="btns"><a class="btn btn-red" href="lessons.html">Book a lesson</a><a class="btn btn-line" href="visit.html">Plan a visit</a></div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ============ facts ============ -->
-  <section class="facts" aria-label="At a glance">
-    <div class="wrap">
-      <dl class="facts__list reveal-stagger">
-        <div>
-          <dt>Fourteen teachers</dt>
-          <dd>Working musicians and credentialed educators, most here a decade or more.</dd>
-        </div>
-        <div>
-          <dt>$135&ndash;$185 a month</dt>
-          <dd>Weekly private lessons, one on one, same day and time each week.</dd>
-        </div>
-        <div>
-          <dt>Repairs from $38</dt>
-          <dd>Setups, restrings, rewiring and pickup work by our in-house tech.</dd>
-        </div>
-      </dl>
-    </div>
-  </section>
+<section class="scene"><div class="wrap">
+  <p class="kicker">Any afternoon at 45 West 10th</p>
+  <ul>
+    <li><span class="cx">Somebody's plugged in by the door.</span><p>Amps are on and the wall is fair game. Customers, teachers, the guys behind the counter. Somebody is always playing something.</p></li>
+    <li><span class="cx">A drum lesson is going in the back.</span><p>Fourteen teachers, eight instrument families, one student at a time. Same slot every week.</p></li>
+    <li><span class="cx">Ken's been here since day one.</span><p>Ken Cefalo opened the doors on June 1, 1993. Thirty-three years later he still runs the place.</p></li>
+  </ul>
+</div></section>
 
-  <!-- ============ lessons ============ -->
-  <section class="section">
-    <div class="wrap feature reveal-stagger">
+<section class="bill"><div class="wrap">
+  <p class="kicker">Main Street Music presents</p>
+  <h2 class="cx">The teachers</h2>
+  <div class="faces">
+    <img src="img/teachers/mike-hall.jpg" alt="Mike Hall" loading="lazy"><img src="img/teachers/sean-britt.jpg" alt="Sean Britt" loading="lazy"><img src="img/teachers/joseph-serrano.jpg" alt="Joseph Serrano" style="object-position:60% 30%" loading="lazy"><img src="img/teachers/bernardette-medeiros.jpg" alt="Bernardette Medeiros" loading="lazy"><img src="img/teachers/brian-hunt.jpg" alt="Brian Hunt" loading="lazy"><img src="img/teachers/erik-urbina.jpg" alt="Erik Alvarez Urbina" loading="lazy">
+  </div>
+  <div class="row r1">
+    <a href="teachers.html#mike-hall"><span class="cx">Mike Hall</span><small>Piano &amp; Hammond B3</small></a>
+    <a href="teachers.html#sean-britt"><span class="cx">Sean Britt</span><small>Jazz guitar</small></a>
+    <a href="teachers.html#joseph-serrano"><span class="cx">Joseph Serrano</span><small>Drums</small></a>
+  </div>
+  <div class="row r2">
+    <a href="teachers.html#bernardette-medeiros"><span class="cx">Bernardette Medeiros</span><small>Voice</small></a>
+    <a href="teachers.html#brian-hunt"><span class="cx">Brian Hunt</span><small>Guitar &amp; bass</small></a>
+    <a href="teachers.html#takako-williams"><span class="cx">Takako Williams</span><small>Piano</small></a>
+    <a href="teachers.html#tom-renner"><span class="cx">Tom Renner</span><small>Sax &amp; clarinet</small></a>
+  </div>
+  <div class="row r3">
+    <a href="teachers.html#elizabeth-dubie"><span class="cx">Elizabeth Dubie</span><small>Strings</small></a>
+    <a href="teachers.html#emma-hewitt"><span class="cx">Emma Hewitt</span><small>Piano</small></a>
+    <a href="teachers.html#phoenix-thanatos"><span class="cx">Phoenix Thanatos</span><small>Flute &amp; voice</small></a>
+    <a href="teachers.html#edward-tavalin"><span class="cx">Edward Tavalin</span><small>Voice</small></a>
+    <a href="teachers.html#dave-villa"><span class="cx">Dave Villa</span><small>Winds</small></a>
+    <a href="teachers.html#erik-urbina"><span class="cx">Erik Alvarez Urbina</span><small>Cello</small></a>
+    <a href="teachers.html#aidan"><span class="cx">Aidan</span><small>Cello</small></a>
+  </div>
+  <p class="and">Weekly private lessons, <strong>$135–$185 a month.</strong> Every age, every level.</p>
+</div></section>
 
-      <div>
-        <span class="eyebrow">Lessons</span>
-        <h2>One teacher, one student, same time every week.</h2>
-        <div class="prose flow">
-          <p>Teaching has been the heart of this store for three decades. You pick a day and a time, and that slot is yours &mdash; week after week, with the same teacher, so progress actually compounds.</p>
-          <p>We run the scheduling and the paperwork so our teachers can spend the half hour teaching.</p>
-        </div>
+<section class="also"><div class="wrap">
+  <a href="gear.html"><span class="cx">Gear</span><p>New and used guitars, amps, drums, keys, brass and woodwinds from sixty-plus brands. Try it before you buy it.</p><b>60+ brands →</b></a>
+  <a href="rentals.html"><span class="cx">Rentals</span><p>School band instruments on rent-to-own. PA systems, mics and amps by the day or the weekend.</p><b>Rent-to-own →</b></a>
+  <a href="repairs.html"><span class="cx">Repairs</span><p>Restrings, setups, pickups and rewiring on the bench in the back. We quote before we touch it.</p><b>From $38 →</b></a>
+</div></section>
 
-        <div class="price-tag">
-          <strong>$135&ndash;$185</strong>
-          <span>per month, depending on the teacher</span>
-        </div>
-
-        <div class="btn-row">
-          <a class="btn btn--primary" href="lessons.html">See how lessons work</a>
-        </div>
-      </div>
-
-      <div>
-        <ul class="checklist">
-          <li><strong>Eight instrument families.</strong> Piano and keyboard, guitar and bass, ukulele, voice, brass, woodwinds, drums and percussion, and orchestral strings.</li>
-          <li><strong>Teachers who still gig.</strong> Full-time musicians and educators. Most hold music degrees; many hold California teaching credentials.</li>
-          <li><strong><a href="recitals.html">Recitals twice a year.</a></strong> Students play for a real audience, not just a parent in a hallway.</li>
-          <li><strong>Every age, every level.</strong> First-timers through advanced players, children through adults.</li>
-          <li><strong>Holidays off.</strong> The lesson calendar marks the weeks we&rsquo;re closed, so nobody pays for a week they can&rsquo;t use.</li>
-        </ul>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ============ services ============ -->
-  <section class="section section--sunk">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <h2>Everything else under the same roof</h2>
-      </div>
-
-      <div class="cards reveal-stagger">
-
-        <a class="card" href="rentals.html">
-          <h3>Rentals</h3>
-          <p>Band instruments on rent-to-own, plus PA systems, powered speakers, wireless mics, amps and an 88-key keyboard by the day or the weekend.</p>
-          <span class="card__cue">What we rent</span>
-        </a>
-
-        <a class="card" href="repairs.html">
-          <h3>Repairs</h3>
-          <p>Restrings with a clean and neck conditioning, full setups with action and intonation, pickup installs and rewiring. Warranty work as an authorized dealer.</p>
-          <span class="card__cue">Repair services</span>
-        </a>
-
-        <a class="card" href="gear.html">
-          <h3>Gear</h3>
-          <p>New and used guitars, amps, keyboards, mics, brass, woodwinds and accessories from sixty-plus brands &mdash; Yamaha, Shure, Zildjian, D&rsquo;Addario, Roland and more.</p>
-          <span class="card__cue">What we carry</span>
-        </a>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ teachers ============ -->
-  <section class="section">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <div>
-          <span class="eyebrow">The roster</span>
-          <h2>You are not learning from a stranger.</h2>
-          <p class="measure-short">Fourteen teachers, most of them here for a decade or more. Berklee, the Manhattan School of Music, the San Francisco Conservatory, the Brubeck Institute.</p>
-        </div>
-        <a class="link-more" href="teachers.html">All fourteen, with bios</a>
-      </div>
-
-      <ul class="roster roster--teaser reveal-stagger">
-        <li>
-          <img class="roster__photo" src="img/teachers/mike-hall.jpg" width="488" height="651" loading="lazy" alt="Mike Hall">
-          <h3>Mike Hall</h3>
-          <p class="roster__instrument">Piano &amp; Organ</p>
-        </li>
-        <li>
-          <img class="roster__photo" src="img/teachers/bernardette-medeiros.jpg" width="265" height="351" loading="lazy" alt="Bernardette Medeiros">
-          <h3>Bernardette Medeiros</h3>
-          <p class="roster__instrument">Voice</p>
-        </li>
-        <li>
-          <img class="roster__photo" src="img/teachers/sean-britt.jpg" width="374" height="499" loading="lazy" alt="Sean Britt">
-          <h3>Sean Britt</h3>
-          <p class="roster__instrument">Guitar</p>
-        </li>
-        <li>
-          <img class="roster__photo" src="img/teachers/joseph-serrano.jpg" width="300" height="169" loading="lazy" alt="Joseph Serrano">
-          <h3>Joseph Serrano</h3>
-          <p class="roster__instrument">Drums</p>
-        </li>
-        <li>
-          <img class="roster__photo" src="img/teachers/tom-renner.jpg" width="480" height="640" loading="lazy" alt="Tom Renner">
-          <h3>Tom Renner</h3>
-          <p class="roster__instrument">Sax &amp; Clarinet</p>
-        </li>
-        <li>
-          <img class="roster__photo" src="img/teachers/elizabeth-dubie.jpg" width="197" height="256" loading="lazy" alt="Elizabeth Dubie">
-          <h3>Elizabeth Dubie</h3>
-          <p class="roster__instrument">Strings</p>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- TODO (phase 5): testimonial band goes here, using real pulled quotes
-       from the 40 Yelp reviews with permission. Do not ship invented quotes. -->
-
+<section class="piano"><div class="wrap">
+  <h2 class="cx">There's a piano on the sidewalk. Play&nbsp;it.</h2>
+  <p>It's been out front since 2018. The one there now was painted red, white and blue by students from Bella Vista Christian Academy.</p>
+</div></section>
 </main>
 
-<!-- @stamp footer -->
-<footer class="site-footer">
-  <div class="wrap">
-
-    <div class="site-footer__visit">
-      <div class="flow">
-        <span class="eyebrow">Come in</span>
-        <h2>45 West 10th Street, downtown Tracy.</h2>
-        <div class="btn-row">
-          <a class="btn btn--light" href="https://www.google.com/maps/search/?api=1&amp;query=45+West+10th+Street+Tracy+CA+95376" target="_blank" rel="noopener">Get directions</a>
-          <a class="btn btn--light" href="tel:+12098351125">Call (209)&nbsp;835-1125</a>
-          <a class="btn btn--light" href="mailto:mainstreetmusictracy@gmail.com">Email us</a>
-        </div>
-      </div>
-
-      <div>
-        <h3>Store hours</h3>
-        <span class="status" data-status hidden></span>
-        <dl class="hours">
-          <div class="hours__row" data-day="1,2,3,4"><dt>Monday&ndash;Thursday</dt><dd>11am &ndash; 8pm</dd></div>
-          <div class="hours__row" data-day="5"><dt>Friday</dt><dd>11am &ndash; 6pm</dd></div>
-          <div class="hours__row" data-day="6"><dt>Saturday</dt><dd>10am &ndash; 4pm</dd></div>
-          <div class="hours__row" data-day="0"><dt>Sunday</dt><dd>Closed</dd></div>
-        </dl>
-      </div>
-    </div>
-
-    <div class="site-footer__grid">
-      <div>
-        <h3>Lessons</h3>
-        <ul>
-          <li><a href="lessons.html">How lessons work</a></li>
-          <li><a href="teachers.html">Our teachers</a></li>
-          <li><a href="recitals.html">Recitals</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h3>The store</h3>
-        <ul>
-          <li><a href="gear.html">Gear we carry</a></li>
-          <li><a href="rentals.html">Rentals &amp; rent-to-own</a></li>
-          <li><a href="repairs.html">Repairs</a></li>
-          <li><a href="visit.html">Visit the shop</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h3>Say hello</h3>
-        <ul>
-          <li><a href="mailto:mainstreetmusictracy@gmail.com">mainstreetmusictracy@gmail.com</a></li>
-          <li><a href="https://reverb.com/shop/mainstreetmusictracy" target="_blank" rel="noopener">Shop on Reverb</a></li>
-          <li><a href="https://www.facebook.com/mainstreetmusictracy/" target="_blank" rel="noopener">Facebook</a></li>
-          <li><a href="https://www.instagram.com/mainstreetmusictracy/" target="_blank" rel="noopener">Instagram</a></li>
-          <li><a href="https://www.youtube.com/@MainStreetMusicTracy/videos" target="_blank" rel="noopener">YouTube</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <p class="site-footer__base">&copy; <span data-year>2026</span> Main Street Music, Inc.</p>
-
+<footer><div class="wrap">
+  <div class="top">
+    <div><h2 class="cx">45 West 10th Street, downtown Tracy.</h2>
+      <div class="btns"><a class="btn btn-red" href="https://www.google.com/maps/search/?api=1&amp;query=45+West+10th+Street+Tracy+CA+95376">Get directions</a><a class="btn btn-line" href="tel:+12098351125">(209) 835-1125</a></div></div>
+    <dl data-hours>
+      <div data-day="1,2,3,4"><dt>Monday–Thursday</dt><dd>11am – 8pm</dd></div>
+      <div data-day="5"><dt>Friday</dt><dd>11am – 6pm</dd></div>
+      <div data-day="6"><dt>Saturday</dt><dd>10am – 4pm</dd></div>
+      <div data-day="0"><dt>Sunday</dt><dd>Closed</dd></div>
+    </dl>
   </div>
-</footer>
-<!-- @end footer -->
-
-<!-- @stamp callbar -->
-<div class="callbar">
-  <a class="btn btn--primary" href="tel:+12098351125">Call the store</a>
-  <a class="btn btn--light" href="mailto:mainstreetmusictracy@gmail.com?subject=Question%20for%20the%20store">Email us</a>
-</div>
-<!-- @end callbar -->
-
-<script src="js/site.js" defer></script>
+  <div class="base">
+    <p>© 2026 Main Street Music, Inc. · Where students come first.</p>
+    <nav aria-label="More"><a href="recitals.html">Recitals</a><a href="mailto:mainstreetmusictracy@gmail.com">Email us</a><a href="https://www.facebook.com/mainstreetmusictracy/">Facebook</a><a href="https://www.instagram.com/mainstreetmusictracy/">Instagram</a><a href="https://www.youtube.com/@MainStreetMusicTracy/videos">YouTube</a><a href="https://reverb.com/shop/mainstreetmusictracy">Reverb</a></nav>
+  </div>
+</div></footer>
+<script src="js/site.js"></script>
 </body>
 </html>

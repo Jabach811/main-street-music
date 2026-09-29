@@ -1,255 +1,92 @@
 <!doctype html>
 <html lang="en">
 <head>
-<!-- @stamp head-top -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script>
-/* .js gates the entrance animations. If site.js never runs, drop the gate
-   so the page renders plainly rather than staying hidden. */
-document.documentElement.className += " js";
-setTimeout(function () {
-  if (!window.msmReady) {
-    document.documentElement.className =
-      document.documentElement.className.replace(/\bjs\b/, "");
-  }
-}, 3000);
-</script>
-<!-- @end head-top -->
-
-<title>Instrument Rentals &amp; Rent-to-Own in Tracy, CA — Main Street Music</title>
-<meta name="description" content="School band instruments on rent-to-own, plus PA systems, powered speakers, wireless mics, amps and keyboards by the day or the weekend. Downtown Tracy.">
-<link rel="canonical" href="https://www.tracyrocks.com/rentals.html">
-
+<title>Rentals · Main Street Music, Tracy CA</title>
+<meta name="description" content="School band instruments on monthly rent-to-own. PA systems, speakers, wireless mics, amps and keyboards by the day or weekend.">
+<link rel="canonical" href="https://main-street-music.vercel.app/rentals.html">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://www.tracyrocks.com/rentals.html">
-<meta property="og:title" content="Instrument Rentals &amp; Rent-to-Own in Tracy, CA">
-<meta property="og:description" content="Band instruments on rent-to-own, plus PA gear by the day or the weekend.">
-<meta property="og:image" content="https://www.tracyrocks.com/img/guitar-wall-1000.jpg">
+<meta property="og:site_name" content="Main Street Music">
+<meta property="og:url" content="https://main-street-music.vercel.app/rentals.html">
+<meta property="og:title" content="Rentals · Main Street Music, Tracy CA">
+<meta property="og:description" content="School band instruments on monthly rent-to-own. PA systems, speakers, wireless mics, amps and keyboards by the day or weekend.">
+<meta property="og:image" content="https://main-street-music.vercel.app/img/share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-
-<!-- @stamp head-assets -->
+<meta name="twitter:image" content="https://main-street-music.vercel.app/img/share.jpg">
+<meta name="theme-color" content="#15223d">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Instrument+Sans:wght@400..600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&amp;display=swap">
 <link rel="stylesheet" href="css/site.css">
-<!-- @end head-assets -->
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Instrument and PA equipment rentals",
-  "serviceType": "Musical instrument rental",
-  "provider": { "@type": "MusicStore", "@id": "https://www.tracyrocks.com/#store", "name": "Main Street Music" },
-  "areaServed": { "@type": "City", "name": "Tracy, California" }
-}
-</script>
 </head>
-
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
-<div data-header-sentinel aria-hidden="true"></div>
-
-<!-- @stamp header -->
-<header class="site-header">
-  <div class="wrap site-header__bar">
-
-    <a class="site-header__logo" href="index.html" aria-label="Main Street Music — home">
-      <picture>
-        <source srcset="img/logo.webp" type="image/webp">
-        <img src="img/logo-src.png" width="411" height="200"
-             alt="Main Street Music, 45 West 10th Street, Tracy, CA. Where students come first.">
-      </picture>
-    </a>
-
-    <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">
-      <span class="nav-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
-      Menu
-    </button>
-
-    <nav class="nav" id="primary-nav" aria-label="Primary">
-      <a href="lessons.html">Lessons</a>
-      <a href="teachers.html">Teachers</a>
-      <a href="rentals.html" aria-current="page">Rentals</a>
-      <a href="repairs.html">Repairs</a>
-      <a href="gear.html">Gear</a>
-      <a href="visit.html">Visit</a>
-    </nav>
-
-    <div class="site-header__contact">
-      <a class="site-header__call" href="tel:+12098351125">(209) 835-1125</a>
-      <span class="status" data-status="compact" hidden></span>
-    </div>
-
-  </div>
-</header>
-<!-- @end header -->
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar"><div class="wrap">
+  <a class="logo" href="index.html"><img src="img/logo.png" alt="Main Street Music, home" width="411" height="200"></a>
+  <nav aria-label="Main"><a href="lessons.html">Lessons</a><a href="teachers.html">Teachers</a><a href="gear.html">Gear</a><a href="rentals.html" aria-current="page">Rentals</a><a href="repairs.html">Repairs</a><a href="visit.html">Visit</a></nav>
+  <div class="right"><span class="status" data-status><i></i><span></span></span><a class="btn btn-red" href="tel:+12098351125"><span class="long">(209) 835-1125</span><span class="short">Call</span></a></div>
+</div></header>
 
 <main id="main">
+<section class="head"><div class="wrap">
+  <p class="kicker">Rentals</p>
+  <h1 class="cx">Band starts Monday? <em>We've got you.</em></h1>
+  <p class="lede">School band instruments on monthly rent-to-own, and live sound gear by the day or the weekend. Serviced in house, picked up locally, handled by real people.</p>
+  <div class="btns"><a class="btn btn-red" href="tel:+12098351125">Call for a quote</a></div>
+</div></section>
 
-  <section class="page-hero">
-    <div class="wrap">
-      <span class="eyebrow">Rentals</span>
-      <h1>Rent the instrument before you buy the instrument.</h1>
-      <p class="lede">School band instruments on rent-to-own, and a shelf of live sound gear you can take for a night or a weekend.</p>
-      <div class="btn-row">
-        <a class="btn btn--primary" href="tel:+12098351125">Check availability</a>
-        <a class="btn btn--ghost" href="visit.html">Find the store</a>
-      </div>
-    </div>
-  </section>
+<section class="sec"><div class="wrap">
+  <h2 class="cx">School instruments</h2>
+  <div class="rows">
+    <div><span class="cx">Rent-to-own</span><p>Pay monthly. <strong>Part of every payment goes toward owning the instrument.</strong></p></div>
+    <div><span class="cx">Switching?</span><p>If your student moves to a different instrument, talk to us. We'll sort it out.</p></div>
+    <div><span class="cx">Rates</span><p>Depend on the instrument. Call for a quote.</p></div>
+    <div><span class="cx">Upkeep</span><p>Rentals are serviced by the same tech who runs our <a href="repairs.html">repair bench</a>.</p></div>
+  </div>
+</div></section>
 
-  <section class="section">
-    <div class="wrap feature reveal-stagger">
+<section class="sec"><div class="wrap">
+  <h2 class="cx">Live sound, by the day or weekend</h2>
+  <ul class="rows">
+    <li><span class="cx">PA systems</span><p>For small rooms and events.</p></li>
+    <li><span class="cx">Powered speakers</span><p>Singles or pairs, with stands.</p></li>
+    <li><span class="cx">Wireless mics</span><p>Handheld and lavalier (the kind that clips to a shirt).</p></li>
+    <li><span class="cx">Guitar &amp; bass amps</span><p>Practice size up to stage size.</p></li>
+    <li><span class="cx">88-key keyboard</span><p>Weighted keys, with stand and pedal.</p></li>
+  </ul>
+</div></section>
 
-      <div class="flow">
-        <span class="eyebrow">School band</span>
-        <h2>Rent-to-own, so the money is not wasted if they stick with it.</h2>
-        <div class="prose flow">
-          <p>Band instruments go out on a monthly rental. A share of what you pay goes toward owning the instrument outright, so a year of renting is not a year of throwing money at a rental company.</p>
-          <p>If the student switches instruments &mdash; and plenty do &mdash; come talk to us rather than eating the loss.</p>
-        </div>
-        <p class="note">Monthly rates depend on the instrument and its condition. Call for a current quote before you commit.</p>
-      </div>
-
-      <div>
-        <ul class="checklist">
-          <li><strong>Serviced in house.</strong> Our own repair tech looks at rentals when they come back and before they go out.</li>
-          <li><strong>Local pickup.</strong> No shipping, no waiting for a box, no return label.</li>
-          <li><strong>Real people.</strong> If something goes wrong you talk to the person at the counter, not a call center.</li>
-        </ul>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="section section--sunk">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <div>
-          <span class="eyebrow">Live sound</span>
-          <h2>Gear for the gig, by the day or the weekend.</h2>
-        </div>
-      </div>
-
-      <dl class="spec reveal">
-        <div><dt>PA systems</dt><dd>Full setups for small rooms and events</dd></div>
-        <div><dt>Powered speakers</dt><dd>Singles or pairs, with stands</dd></div>
-        <div><dt>Wireless microphones</dt><dd>Handheld and lavalier</dd></div>
-        <div><dt>Guitar &amp; bass amps</dt><dd>Practice through stage size</dd></div>
-        <div><dt>88-key keyboard</dt><dd>Weighted, with stand and pedal</dd></div>
-        <div><dt>Rates</dt><dd><em>Per day and per weekend &mdash; call for current pricing</em></dd></div>
-      </dl>
-
-      <!-- TODO (phase 5): confirm the full rental inventory and the day/weekend
-           rate card with the store, then replace the placeholder line above. -->
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="wrap feature reveal-stagger">
-
-      <div class="flow">
-        <span class="eyebrow">Before you call</span>
-        <h2>Two things speed this up.</h2>
-        <div class="prose flow">
-          <p>Know the date you need the gear and roughly the size of the room or the ensemble. That is usually enough for us to say yes, no, or here is what would actually work better.</p>
-          <p>For band rentals, bring the instrument list your school sent home. It saves a round of phone tag.</p>
-        </div>
-        <div class="btn-row">
-          <a class="btn btn--primary" href="tel:+12098351125">Call (209)&nbsp;835-1125</a>
-          <a class="btn btn--ghost" href="mailto:mainstreetmusictracy@gmail.com?subject=Rental%20enquiry">Email us</a>
-          <a class="btn btn--ghost" href="repairs.html">Repairs &amp; setups</a>
-        </div>
-      </div>
-
-      <div>
-        <dl class="spec">
-          <div><dt>Band instruments</dt><dd>Monthly, rent-to-own</dd></div>
-          <div><dt>Live sound gear</dt><dd>Daily or weekend</dd></div>
-          <div><dt>Reserve by</dt><dd>Phone or in person</dd></div>
-          <div><dt>Deposit</dt><dd><em>Ask at the counter</em></dd></div>
-        </dl>
-      </div>
-
-    </div>
-  </section>
-
+<section class="sec alt"><div class="wrap">
+  <h2 class="cx">Before you call</h2>
+  <div class="rows">
+    <div><span class="cx">For an event</span><p>Know the date and roughly how big the room is.</p></div>
+    <div><span class="cx">For school</span><p>Bring the school's instrument list.</p></div>
+    <div><span class="cx">To reserve</span><p>By phone or in person. Ask at the counter about the deposit.</p></div>
+  </div>
+</div></section>
 </main>
 
-<!-- @stamp footer -->
-<footer class="site-footer">
-  <div class="wrap">
-
-    <div class="site-footer__visit">
-      <div class="flow">
-        <span class="eyebrow">Come in</span>
-        <h2>45 West 10th Street, downtown Tracy.</h2>
-        <div class="btn-row">
-          <a class="btn btn--light" href="https://www.google.com/maps/search/?api=1&amp;query=45+West+10th+Street+Tracy+CA+95376" target="_blank" rel="noopener">Get directions</a>
-          <a class="btn btn--light" href="tel:+12098351125">Call (209)&nbsp;835-1125</a>
-          <a class="btn btn--light" href="mailto:mainstreetmusictracy@gmail.com">Email us</a>
-        </div>
-      </div>
-
-      <div>
-        <h3>Store hours</h3>
-        <span class="status" data-status hidden></span>
-        <dl class="hours">
-          <div class="hours__row" data-day="1,2,3,4"><dt>Monday&ndash;Thursday</dt><dd>11am &ndash; 8pm</dd></div>
-          <div class="hours__row" data-day="5"><dt>Friday</dt><dd>11am &ndash; 6pm</dd></div>
-          <div class="hours__row" data-day="6"><dt>Saturday</dt><dd>10am &ndash; 4pm</dd></div>
-          <div class="hours__row" data-day="0"><dt>Sunday</dt><dd>Closed</dd></div>
-        </dl>
-      </div>
-    </div>
-
-    <div class="site-footer__grid">
-      <div>
-        <h3>Lessons</h3>
-        <ul>
-          <li><a href="lessons.html">How lessons work</a></li>
-          <li><a href="teachers.html">Our teachers</a></li>
-          <li><a href="recitals.html">Recitals</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h3>The store</h3>
-        <ul>
-          <li><a href="gear.html">Gear we carry</a></li>
-          <li><a href="rentals.html" aria-current="page">Rentals &amp; rent-to-own</a></li>
-          <li><a href="repairs.html">Repairs</a></li>
-          <li><a href="visit.html">Visit the shop</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h3>Say hello</h3>
-        <ul>
-          <li><a href="mailto:mainstreetmusictracy@gmail.com">mainstreetmusictracy@gmail.com</a></li>
-          <li><a href="https://reverb.com/shop/mainstreetmusictracy" target="_blank" rel="noopener">Shop on Reverb</a></li>
-          <li><a href="https://www.facebook.com/mainstreetmusictracy/" target="_blank" rel="noopener">Facebook</a></li>
-          <li><a href="https://www.instagram.com/mainstreetmusictracy/" target="_blank" rel="noopener">Instagram</a></li>
-          <li><a href="https://www.youtube.com/@MainStreetMusicTracy/videos" target="_blank" rel="noopener">YouTube</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <p class="site-footer__base">&copy; <span data-year>2026</span> Main Street Music, Inc.</p>
-
+<footer><div class="wrap">
+  <div class="top">
+    <div><h2 class="cx">45 West 10th Street, downtown Tracy.</h2>
+      <div class="btns"><a class="btn btn-red" href="https://www.google.com/maps/search/?api=1&amp;query=45+West+10th+Street+Tracy+CA+95376">Get directions</a><a class="btn btn-line" href="tel:+12098351125">(209) 835-1125</a></div></div>
+    <dl data-hours>
+      <div data-day="1,2,3,4"><dt>Monday–Thursday</dt><dd>11am – 8pm</dd></div>
+      <div data-day="5"><dt>Friday</dt><dd>11am – 6pm</dd></div>
+      <div data-day="6"><dt>Saturday</dt><dd>10am – 4pm</dd></div>
+      <div data-day="0"><dt>Sunday</dt><dd>Closed</dd></div>
+    </dl>
   </div>
-</footer>
-<!-- @end footer -->
-
-<!-- @stamp callbar -->
-<div class="callbar">
-  <a class="btn btn--primary" href="tel:+12098351125">Call the store</a>
-  <a class="btn btn--light" href="mailto:mainstreetmusictracy@gmail.com?subject=Question%20for%20the%20store">Email us</a>
-</div>
-<!-- @end callbar -->
-
-<script src="js/site.js" defer></script>
+  <div class="base">
+    <p>© 2026 Main Street Music, Inc. · Where students come first.</p>
+    <nav aria-label="More"><a href="recitals.html">Recitals</a><a href="mailto:mainstreetmusictracy@gmail.com">Email us</a><a href="https://www.facebook.com/mainstreetmusictracy/">Facebook</a><a href="https://www.instagram.com/mainstreetmusictracy/">Instagram</a><a href="https://www.youtube.com/@MainStreetMusicTracy/videos">YouTube</a><a href="https://reverb.com/shop/mainstreetmusictracy">Reverb</a></nav>
+  </div>
+</div></footer>
+<script src="js/site.js"></script>
 </body>
 </html>
